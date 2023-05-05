@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[ExecuteInEditMode]
 public class CameraMovement : MonoBehaviour
 {
     private Camera m_camera;
@@ -20,6 +20,10 @@ public class CameraMovement : MonoBehaviour
     void LateUpdate()
     {
         //transform.LookAt(m_focusPoint);
+     
         transform.position = Vector3.Lerp(transform.position, m_cameraAnchor.position, Mathf.Clamp01(m_MovementSmoothing + Time.deltaTime));
+        transform.rotation =  m_cameraAnchor.rotation;
+
     }
+
 }
