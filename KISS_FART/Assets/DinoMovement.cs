@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class DinoMovement : MonoBehaviour
 {
-   private 
+   private float test;
 }
