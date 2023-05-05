@@ -11,7 +11,7 @@ public class DinoMovement : MonoBehaviour
     {
     }
 
-    private void LateUpdate()
+    private void Update()
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
