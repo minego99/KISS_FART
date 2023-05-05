@@ -744,6 +744,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_controller: {fileID: 1869219969}
   m_speed: 5
+  m_controlSmoothing: 0.5
+  m_smoothingFactor: 1
+  m_deadzone: 0.1
 --- !u!65 &1869219965
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -887,7 +890,19 @@ MonoBehaviour:
     m_ActionId: aa645734-da30-452f-b700-294fe960407f
     m_ActionName: Gameplay/InteractAction[/Keyboard/e,/XInputControllerWindows/buttonSouth]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1869219964}
+        m_TargetAssemblyTypeName: DinoMovement, Assembly-CSharp
+        m_MethodName: ChangeDirection
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 482415f6-a5f8-4666-9a62-d41d11ef8819
     m_ActionName: Gameplay/Movement[/XInputControllerWindows/leftStick]
   - m_PersistentCalls:
