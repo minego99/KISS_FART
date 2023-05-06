@@ -17,8 +17,9 @@ public class GameManager : MonoBehaviour
     public Transform m_nestPosition;
  public static bool s_doesattack = false;
    public static bool s_patrolFarmer = false;
-    public static int s_poulerCount = 0;
-
+    
+    public static int s_poulerScore = 0;
+    public int m_poulerScoreToEgg = 5;
    private void Awake()
     {
         if(s_instance == null)
@@ -160,6 +161,10 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
+        if(s_poulerScore > m_poulerScoreToEgg)
+        {
+            m_animator.SetTrigger("LayEgg");
+        }
         TimePass();
         SwitchDayAndNight();
         //Debug.Log(m_currentTime);

@@ -15,7 +15,8 @@ public class Pouler : MonoBehaviour
     private float m_currentTimeOnPoint;
     private float m_maxTimeOnCurrentPoint;
 
-
+    public Transform m_dinoBack;
+    public bool m_isOnDino;
     private Vector3 m_currentDestination;
 
     //float m_minPoulerMovement = 0.5f;
@@ -30,11 +31,11 @@ public class Pouler : MonoBehaviour
         Taken,
         Death
     }
-
+    
     private EEntityState m_currentState = EEntityState.Movement;
     #endregion
 
-
+    bool m_poulerIsOnBack = false;
     #region States management
 
     private void OnEnterState()
@@ -139,14 +140,28 @@ public class Pouler : MonoBehaviour
             }
         }
         else
-        {
+
+        {   
+           
             if (other.CompareTag("Mouth") == true)
             {
-                transform.position = transform.position; /*dinobacktransform*/
+
+                OnSwitchState(EEntityState.Taken);
+                m_poulerIsOnBack = true;
+                
             }
+            
         }
     }
-
+    
+    void AddPoulerCount()
+    {
+        GameManager.s_poulerScore++;
+    }
+    private void GetPoulerOnBack()
+    {
+        transform.position = m_dinoBack.position;
+    }
 
     void Start()
     {
@@ -155,7 +170,21 @@ public class Pouler : MonoBehaviour
 
     void Update()
     {
+        
+        
+        if (m_poulerIsOnBack)
+        {
+            GetPoulerOnBack();
+        }
         OnUpdateState();
+        
+        if (Input.GetButtonDown("Fire1"))  
+        {
+            if (m_poulerIsOnBack == true)
+        {
+            m_poulerIsOnBack = false;
+        }
+        }
     }
 
     #region Pathfinding and movement
@@ -180,12 +209,6 @@ public class Pouler : MonoBehaviour
         while (!NavMesh.SamplePosition(newPatrolPoint, out patrolHit, m_navMeshSnapMaxDistance, -1) || CheckPositionInRadius(newPatrolPoint, transform.position, m_minimumPatrolDistance) && (i < 30))
         {
             newPatrolPoint = GeneratePatrolPoint(m_patrolMaxDistance) + transform.position;
-            i ++;
-        }
-
-        if(i == 30)
-        {
-            Debug.Log("Pathfinding broken");
         }
         m_currentDestination = patrolHit.position;
         return m_currentDestination;
