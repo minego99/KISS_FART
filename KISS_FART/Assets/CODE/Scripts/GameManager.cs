@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    static GameManager s_instance;
     [SerializeField]
     bool m_switchTimeState = false;
      [SerializeField] Transform m_directionnalLight;
