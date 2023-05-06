@@ -15,7 +15,8 @@ public class GameManager : MonoBehaviour
     float m_currentTimeRotation = 120;
     public Transform m_playerTransform;
     public Transform m_nestPosition;
-    static bool s_doesattack = false;
+   public static bool s_doesattack = false;
+   public static bool s_patrolFarmer = false;
    private void Awake()
     {
         if(s_instance == null)
@@ -48,9 +49,18 @@ public class GameManager : MonoBehaviour
     {
         s_doesattack = true;
     }
+
     public void CantAttack()
     {
         s_doesattack = false;
+    }
+    public void DoesPatrol()
+    {
+        s_patrolFarmer = true;
+    }
+    public void DontPatrol()
+    {
+        s_patrolFarmer = false;
     }
     public enum EGameState
     {
