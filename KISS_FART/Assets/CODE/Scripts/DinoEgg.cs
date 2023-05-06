@@ -8,7 +8,10 @@ public class DinoEgg : MonoBehaviour
    
     private void OnTriggerEnter(Collider other)
     {
+        if(other.CompareTag("Nest") == true)
+        {
 
+        }
 
         if (GameManager.s_doesattack == false)
         {
@@ -39,6 +42,7 @@ public class DinoEgg : MonoBehaviour
     }
     private void Update()
     {
+        
         if (m_isEggOnBack == true)
         {
             Debug.Log("Go on back");
@@ -58,4 +62,11 @@ public class DinoEgg : MonoBehaviour
             }
         }
     }
+
+
+
+
 }
+
+
+

@@ -173,7 +173,6 @@ public class Pouler : MonoBehaviour
     void Update()
     {
 
-
         if (m_poulerIsOnBack)
         {
             GetPoulerOnBack();
