@@ -10,7 +10,7 @@ public class DinoEgg : MonoBehaviour
     {
         if(other.CompareTag("Nest") == true)
         {
-
+            
         }
 
         if (GameManager.s_doesattack == false)
