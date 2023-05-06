@@ -29,6 +29,7 @@ public class DinoEgg : MonoBehaviour
          
         
     }
+    
     void TakeEggOff()
     {
       m_isEggOnBack = false;
@@ -41,7 +42,7 @@ public class DinoEgg : MonoBehaviour
     {
         if(m_isEggOnBack == true)
         {
-            transform.position = DinoMovement.m_backPosition.position;
+            transform.position = DinoMovement.s_backPosition.position;
         }
         if(m_isEggOnBack == false)
         {
