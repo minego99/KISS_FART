@@ -15,9 +15,10 @@ public class GameManager : MonoBehaviour
     float m_currentTimeRotation = 120;
     public Transform m_playerTransform;
     public Transform m_nestPosition;
-   public static bool s_doesattack = false;
+ public static bool s_doesattack = false;
    public static bool s_patrolFarmer = false;
-    public static int m_poulerCount = 0;
+    public static int s_poulerCount = 0;
+
    private void Awake()
     {
         if(s_instance == null)
@@ -89,13 +90,13 @@ public class GameManager : MonoBehaviour
     {
         ExitTimeState(m_currentTime);
         newstate = m_currentTime  ;
-        Debug.Log("Switch play state is " + newstate);
+        //Debug.Log("Switch play state is " + newstate);
         EnterTimeState(newstate);
     }
     void EnterDayState() 
     {
        // float dayRotation = 25;
-        Debug.Log("C'est le jour");
+       // Debug.Log("C'est le jour");
        m_animator.SetTrigger("SunRise");
        // Quaternion newRotation = Quaternion.Euler(m_dayRotation, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
        //m_directionnalLight.transform.rotation = newRotation;
@@ -104,7 +105,7 @@ public class GameManager : MonoBehaviour
     } 
     void EnterNightState()
     {
-        Debug.Log("C'est la nuit");
+       // Debug.Log("C'est la nuit");
         // float nightRotation = -10;
         m_animator.SetTrigger("SunDown");
       //  Quaternion newRotation = Quaternion.Euler(m_nightRotation, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
@@ -117,12 +118,12 @@ public class GameManager : MonoBehaviour
     }
     void ExitDayState()
     {
-        Debug.Log("ExitDayState");
+       // Debug.Log("ExitDayState");
         m_currentTime = ETimeState.Night;
     }
     void ExitNightState()
     {
-        Debug.Log("ExitNightState");
+       // Debug.Log("ExitNightState");
         m_currentTime = ETimeState.Day;
     }
    
@@ -161,6 +162,8 @@ public class GameManager : MonoBehaviour
     {
         TimePass();
         SwitchDayAndNight();
-        Debug.Log(m_currentTime);
+        //Debug.Log(m_currentTime);
+        //Debug.Log("doesattack is  " + s_doesattack);
+        
     }
 }
