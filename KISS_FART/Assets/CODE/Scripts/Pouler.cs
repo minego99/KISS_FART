@@ -129,23 +129,23 @@ public class Pouler : MonoBehaviour
     {
         Destroy(gameObject);
     }
-    //private void OnTriggerStay(Collider other)
-    //{
-    //    if (GameManager.s_doesattack == true)
-    //    {
-    //        if (other.CompareTag("Mouth") == true)
-    //        {
-    //            m_animator.SetTrigger("Death");
-    //        }
-    //    }
-    //    else
-    //    {
-    //        if (other.CompareTag("Mouth") == true)
-    //        {
-    //            transform.position = transform.position; /*dinobacktransform*/
-    //        }
-    //    }
-    //}
+    private void OnTriggerStay(Collider other)
+    {
+        if (GameManager.s_doesattack == true)
+        {
+            if (other.CompareTag("Mouth") == true)
+            {
+                m_animator.SetTrigger("Death");
+            }
+        }
+        else
+        {
+            if (other.CompareTag("Mouth") == true)
+            {
+                transform.position = transform.position; /*dinobacktransform*/
+            }
+        }
+    }
 
 
     void Start()
@@ -180,6 +180,12 @@ public class Pouler : MonoBehaviour
         while (!NavMesh.SamplePosition(newPatrolPoint, out patrolHit, m_navMeshSnapMaxDistance, -1) || CheckPositionInRadius(newPatrolPoint, transform.position, m_minimumPatrolDistance) && (i < 30))
         {
             newPatrolPoint = GeneratePatrolPoint(m_patrolMaxDistance) + transform.position;
+            i ++;
+        }
+
+        if(i == 30)
+        {
+            Debug.Log("Pathfinding broken");
         }
         m_currentDestination = patrolHit.position;
         return m_currentDestination;
