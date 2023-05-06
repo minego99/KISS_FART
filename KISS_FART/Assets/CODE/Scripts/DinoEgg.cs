@@ -48,14 +48,14 @@ public class DinoEgg : MonoBehaviour
         {
             Debug.Log("Go on back");
             transform.SetParent(DinoMovement.s_instance.m_dinoBack);
-            transform.position = Vector3.zero;
+            transform.position = DinoMovement.s_instance.m_dinoBack.position;
           //  transform.position = DinoMovement.s_instance.m_dinoBack.position;
             DinoMovement.s_instance.m_hasEgg = true;
         }
         if (m_isEggOnBack == false)
         {
             
-            Debug.Log("GOes not on back");
+          //  Debug.Log("GOes not on back");
             transform.SetParent(null);
             DinoMovement.s_instance.m_hasEgg = false;
         }
