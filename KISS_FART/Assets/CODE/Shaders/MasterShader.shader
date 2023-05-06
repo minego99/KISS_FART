@@ -65,7 +65,7 @@ Shader "Custom/MasterShader"
 }
 /*ASEBEGIN
 Version=18917
-242;73;1677;584;701.1229;-130.2983;1;True;False
+648;73;1271;428;1054.4;-26.73446;1.3;False;False
 Node;AmplifyShaderEditor.Vector2Node;17;-1251.677,514.8836;Inherit;False;Property;_Offset;Offset;5;0;Create;True;0;0;0;False;0;False;1,1;0,0;0;3;FLOAT2;0;FLOAT;1;FLOAT;2
 Node;AmplifyShaderEditor.TexCoordVertexDataNode;14;-1398.519,-53.94681;Inherit;False;0;2;0;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SimpleAddOpNode;15;-1041.677,331.8836;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0
@@ -104,4 +104,4 @@ WireConnection;0;3;3;3
 WireConnection;0;4;12;0
 WireConnection;0;5;3;1
 ASEEND*/
-//CHKSM=874E005C8C225ECDD36CE3E3785E28A84AA6F317
+//CHKSM=D2B1FD030FDF845E7B9C5F6483AA735D56B0085D

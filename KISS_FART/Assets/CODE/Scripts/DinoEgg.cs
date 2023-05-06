@@ -49,6 +49,13 @@ public class DinoEgg : MonoBehaviour
             Debug.Log("GOes not on back");
             transform.position = transform.position;
         }
-
+        if (Input.GetButtonDown("Fire1"))
+        {
+            if(m_isEggOnBack == true)
+            {
+                transform.position = transform.position;
+                m_isEggOnBack = false;
+            }
+        }
     }
 }
