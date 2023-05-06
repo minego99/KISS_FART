@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class DinoMovement : MonoBehaviour
 {
-    public static DinoMovement s_instance; 
     Animator m_animator;
     private CharacterController m_controller;
     [SerializeField] float m_speed;
@@ -19,34 +18,27 @@ public class DinoMovement : MonoBehaviour
     private float m_gravity = 9.81f;
     public int m_poulerToLayEgg = 5;
     public GameObject m_eggPrefab;
- //   public static Transform s_backPosition;
-    public Transform m_layEggPosition;
+    public static Transform m_backPosition;
+    public Transform s_layEggPosition;
      public bool m_mouthActivated;
 
-    public Transform m_dinoBack;
-
+   
     private void Awake()
-    {if(s_instance == null)
-        {
-            s_instance = this;
-        }
+    {
         
-      
         m_animator = GetComponent<Animator>();
         PlayerInput inputs = new PlayerInput();
     }
     void LayEgg()
     {
-        if (GameManager.s_poulerScore >= m_poulerToLayEgg)
+        if (GameManager.s_poulerCount >= m_poulerToLayEgg)
         {
-            GameManager.s_poulerScore = 0;
             m_animator.SetTrigger("LayEgg");
         }
     }
-
     void InstantiateEgg()
     {
-        Instantiate(m_eggPrefab, m_layEggPosition.transform.position, Quaternion.identity);
+        Instantiate(m_eggPrefab, s_layEggPosition.transform);
     }
     void ManageMouth()
     {
@@ -76,8 +68,7 @@ public class DinoMovement : MonoBehaviour
     }
     private void Update()
     {
-        LayEgg();
-        Debug.Log(GameManager.s_poulerScore);
+
         ManageMouth();
         Action();
         float horizontal = Input.GetAxis("Horizontal");
