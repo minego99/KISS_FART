@@ -97,7 +97,7 @@ public class DinoMovement : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, -Vector2.SignedAngle(Vector2.up, dir), 0);
 
                 m_controller.Move(move - Vector3.up * m_gravity);
-                Debug.Log("Magnitude is: " + dir.magnitude + ", sqrMagnitude is: " + dir.sqrMagnitude);
+                //Debug.Log("Magnitude is: " + dir.magnitude + ", sqrMagnitude is: " + dir.sqrMagnitude);
                 m_animator.SetFloat("Speed", dir.magnitude);
 
             }
