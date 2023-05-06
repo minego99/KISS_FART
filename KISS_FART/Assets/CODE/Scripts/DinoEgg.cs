@@ -4,62 +4,51 @@ using UnityEngine;
 
 public class DinoEgg : MonoBehaviour
 {
-    public Transform m_backDinoPosition;
     bool m_isEggOnBack = false;
-    private void OnTriggerStay(Collider other)
+   
+    private void OnTriggerEnter(Collider other)
     {
-        if (GameManager.s_doesattack != true)
+
+
+        if (GameManager.s_doesattack == false)
         {
-       
-            if (other.CompareTag("Mouth") == true)
+            if (other.CompareTag("Mouth") == true && m_isEggOnBack == false)
             {
-
-                m_isEggOnBack = true;
-                
-
+                TakeEggOn();
             }
         }
-  
-    }
-    
-    private void OnEnable()
-    {
-        Debug.Log("enabled");
-        m_backDinoPosition = DinoMovement.s_instance.m_dinoBack;
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.CompareTag("Nest"))
+        else
         {
-            //seteggtonest
+            if (other.CompareTag("Mouth") == true)
+            {
+                TakeEggOff();
+            }
         }
-    }
-    private void GetEggOnBack()
-    {
-        transform.position = m_backDinoPosition.position;
+
+       
+
     }
     void TakeEggOff()
     {
-      m_isEggOnBack = false;
+        m_isEggOnBack = false;
     }
     void TakeEggOn()
     {
+        Debug.Log("Egg si now on");
         m_isEggOnBack = true;
     }
     private void Update()
     {
-        if (m_isEggOnBack)
+        if (m_isEggOnBack == true)
         {
-            GetEggOnBack();
+            Debug.Log("Go on back");
+            transform.position = DinoMovement.s_instance.m_dinoBack.position;
+        }
+        if (m_isEggOnBack == false)
+        {
+            Debug.Log("GOes not on back");
+            transform.position = transform.position;
         }
 
-        if (Input.GetButtonDown("Fire1"))
-        {
-            if (m_isEggOnBack == true)
-            {
-                m_isEggOnBack = false;
-            }
-        }
-   
     }
 }

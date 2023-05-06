@@ -5,6 +5,9 @@ using UnityEngine.AI;
 
 public class Pouler : MonoBehaviour
 {
+    float m_minPoulerMovement = 0.5f;
+    float m_maxPoulerMovement = 1f;
+    Vector3 m_randomMovement = Vector3.zero;
     NavMeshAgent m_agent;
     Collider m_collider;
     Animator m_animator;
@@ -31,94 +34,12 @@ public class Pouler : MonoBehaviour
         Taken,
         Death
     }
-    
+
     private EEntityState m_currentState = EEntityState.Movement;
     #endregion
 
     bool m_poulerIsOnBack = false;
     #region States management
-
-    private void OnEnterState()
-    {
-        switch (m_currentState)
-        {
-            case EEntityState.Movement:
-                break;
-            case EEntityState.Taken:
-                break;
-            case EEntityState.Death:
-                Destroy(gameObject);
-                break;
-            default:
-                break;
-        }
-    }
-
-    private void OnExitState()
-    {
-        switch (m_currentState)
-        {
-            case EEntityState.Movement:
-                break;
-            case EEntityState.Taken:
-                break;
-            case EEntityState.Death:
-                break;
-            default:
-                break;
-        }
-    }
-
-    private void OnUpdateState()
-    {
-        switch (m_currentState)
-        {
-            case EEntityState.Movement:
-                if (!m_agent.pathPending && m_agent.remainingDistance <= m_agent.stoppingDistance)
-                {
-                    if (!m_agent.hasPath || m_agent.velocity.sqrMagnitude == 0f)
-                    {
-                        if (m_currentTimeOnPoint >= m_maxTimeOnCurrentPoint)
-                        {
-                            //Debug.Log("Move");
-                            m_currentDestination = DefinePatrolDestination();
-                            m_agent.SetDestination(m_currentDestination);
-                            m_maxTimeOnCurrentPoint = Random.Range(m_minTimeOnPoint, m_maxTimeOnPoint);
-                            m_currentTimeOnPoint = 0;
-                        }
-
-                        else
-                        {
-                            m_currentTimeOnPoint += Time.deltaTime;
-                            //Debug.Log(m_currentTimeOnPoint);
-                        }
-
-                    }
-                    //Debug.Log("wut");
-                }
-                else
-                {
-                    //Debug.Log("out");
-                }
-                break;
-            case EEntityState.Taken:
-                break;
-            case EEntityState.Death:
-                break;
-            default:
-                break;
-        }
-    }
-
-    public void OnSwitchState(EEntityState newState)
-    {
-        OnExitState();
-        m_currentState = newState;
-        OnEnterState();
-    }
-
-    #endregion
-
     private void Awake()
     {
         m_agent = GetComponent<NavMeshAgent>();
@@ -140,49 +61,43 @@ public class Pouler : MonoBehaviour
             }
         }
         else
-
-        {   
-           
+        {
             if (other.CompareTag("Mouth") == true)
             {
-
-                OnSwitchState(EEntityState.Taken);
-                m_poulerIsOnBack = true;
-                
+                transform.position = m_dinoBack.position ; /*dinobacktransform*/
             }
-            
         }
     }
-    
-    void AddPoulerCount()
+    public void OnCollisionEnter(Collision collision)
+    {
+
+    }
+    void Addscore()
     {
         GameManager.s_poulerScore++;
     }
-    private void GetPoulerOnBack()
+    void RandomMovement()
     {
-        transform.position = m_dinoBack.position;
+        float randomX = Random.Range(m_minPoulerMovement, m_maxPoulerMovement);
+        float randomZ = Random.Range(m_minPoulerMovement, m_maxPoulerMovement);
+        m_randomMovement = new Vector3(randomX, 0, randomZ);
     }
+    void PoulerMove()
+    {
+        bool destinationReached = false;
+        m_agent.SetDestination(transform.position + m_randomMovement);
 
+
+    }
+    void Start()
+    {
+
+    }
 
     void Update()
     {
-        
-        
-        if (m_poulerIsOnBack)
-        {
-            GetPoulerOnBack();
-        }
-        OnUpdateState();
-        
-        if (Input.GetButtonDown("Fire1"))  
-        {
-            if (m_poulerIsOnBack == true)
-        {
-            m_poulerIsOnBack = false;
-        }
-        }
+        PoulerMove();
     }
-
     #region Pathfinding and movement
 
     private Vector3 GeneratePatrolPoint(float radius)
@@ -223,3 +138,5 @@ public class Pouler : MonoBehaviour
 
     #endregion
 }
+
+#endregion
