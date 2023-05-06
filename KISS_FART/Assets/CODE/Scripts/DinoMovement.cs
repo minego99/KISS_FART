@@ -31,7 +31,7 @@ public class DinoMovement : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Vector3 move = new Vector3(horizontal, 0, vertical) * m_speed * Time.deltaTime;
+        Vector3 move = new Vector3(horizontal, 0, vertical) * m_speed * Time.deltaTime - Vector3.up * m_gravity;
         m_controller.Move(move);
     }
 
