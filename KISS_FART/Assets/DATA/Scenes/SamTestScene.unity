@@ -1027,6 +1027,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 246023114607391365, guid: de7362264fbb35945a5c8bd4c04f44d6, type: 3}
+      propertyPath: m_patrols.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 246023114607391365, guid: de7362264fbb35945a5c8bd4c04f44d6, type: 3}
+      propertyPath: m_patrols.Array.data[0]
+      value: 
+      objectReference: {fileID: 575674896}
+    - target: {fileID: 246023114607391365, guid: de7362264fbb35945a5c8bd4c04f44d6, type: 3}
+      propertyPath: m_patrols.Array.data[1]
+      value: 
+      objectReference: {fileID: 2142309012}
     - target: {fileID: 246023114607391385, guid: de7362264fbb35945a5c8bd4c04f44d6, type: 3}
       propertyPath: m_Name
       value: GuardianV1

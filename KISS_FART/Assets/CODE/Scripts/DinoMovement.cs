@@ -87,14 +87,18 @@ public class DinoMovement : MonoBehaviour
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
 
+            Vector2 dir = new Vector2(horizontal, vertical);
+            dir = Vector2.ClampMagnitude(dir, 1f);
 
-            Vector3 move = new Vector3(horizontal, 0, vertical) * m_speed * Time.deltaTime;
+
+            Vector3 move = new Vector3(dir.x, 0, dir.y) * m_speed * Time.deltaTime;
             if (vertical != 0 || horizontal != 0)
             {
-                transform.rotation = Quaternion.Euler(0, -Vector2.SignedAngle(Vector2.up, new Vector2(horizontal, vertical)), 0);
+                transform.rotation = Quaternion.Euler(0, -Vector2.SignedAngle(Vector2.up, dir), 0);
 
                 m_controller.Move(move - Vector3.up * m_gravity);
-            m_animator.SetFloat("Speed", move.sqrMagnitude);
+                //Debug.Log("Magnitude is: " + dir.magnitude);
+                m_animator.SetFloat("Speed", dir.magnitude);
 
             }
             //Debug.Log("move is" + move);

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    static GameManager s_instance;
+     public static GameManager s_instance;
     [SerializeField]
     bool m_switchTimeState = false;
     [SerializeField] Transform m_directionnalLight;
@@ -17,7 +17,9 @@ public class GameManager : MonoBehaviour
     public Transform m_nestPosition;
     public static bool s_doesattack = false;
     public static bool s_patrolFarmer = false;
-
+    public int m_maxEggsNumber = 3;
+    public int m_currentEggsNumber = 0;
+   public  GameObject m_nestGameObject;
     public static int s_poulerScore = 0;
     public int m_poulerScoreToEgg = 5;
     private void Awake()
@@ -97,22 +99,16 @@ public class GameManager : MonoBehaviour
     }
     void EnterDayState()
     {
-        // float dayRotation = 25;
-        // Debug.Log("C'est le jour");
         m_animator.SetTrigger("SunRise");
-        // Quaternion newRotation = Quaternion.Euler(m_dayRotation, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
-        //m_directionnalLight.transform.rotation = newRotation;
-
+ 
 
     }
+
+   
     void EnterNightState()
     {
-        // Debug.Log("C'est la nuit");
-        // float nightRotation = -10;
         m_animator.SetTrigger("SunDown");
-        //  Quaternion newRotation = Quaternion.Euler(m_nightRotation, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
-        //m_directionnalLight.transform.rotation = newRotation/*;*/
-    }
+       }
     public void ReturnToNest()
     {
 
@@ -120,7 +116,6 @@ public class GameManager : MonoBehaviour
     }
     void ExitDayState()
     {
-        // Debug.Log("ExitDayState");
         m_currentTime = ETimeState.Night;
     }
     void ExitNightState()
@@ -142,6 +137,7 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
+   
     void ExitTimeState(ETimeState newstate)
     {
         switch (m_currentTime)
@@ -162,6 +158,10 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
+        if (m_currentEggsNumber >= m_maxEggsNumber)
+        {
+            m_animator.SetTrigger("WIN");
+        }
         if (s_poulerScore > m_poulerScoreToEgg)
         {
             m_animator.SetTrigger("LayEgg");
