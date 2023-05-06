@@ -64,13 +64,17 @@ public class Pouler : MonoBehaviour
         {
             if (other.CompareTag("Mouth") == true)
             {
-                transform.position = transform.position; /*dinobacktransform*/
+                transform.position = m_dinoBack.position ; /*dinobacktransform*/
             }
         }
     }
     public void OnCollisionEnter(Collision collision)
     {
 
+    }
+    void Addscore()
+    {
+        GameManager.s_poulerScore++;
     }
     void RandomMovement()
     {

@@ -5,28 +5,29 @@ using UnityEngine;
 public class DinoEgg : MonoBehaviour
 {
     bool m_isEggOnBack = false;
-    private void OnCollisionEnter(Collision collision)
+   
+    private void OnTriggerStay(Collider other)
     {
-        if (GameManager.s_doesattack == false)
-        {
-            if (collision.collider == CompareTag("Mouth") && m_isEggOnBack == false)
+          if (GameManager.s_doesattack == false)
+           {
+            if (other == CompareTag("Mouth") && m_isEggOnBack == false)
 
             {
+                Debug.Log("take egg on");
                 TakeEggOn();
             }
 
-            else if (collision.collider == CompareTag("Mouth") && m_isEggOnBack == true)
+            else if (other == CompareTag("Mouth") && m_isEggOnBack == true)
             {
 
                 {
+                    Debug.Log("take egg off");
                     TakeEggOff();
                 }
 
             }
 
         }
-
-
 
     }
     void TakeEggOff()
