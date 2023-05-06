@@ -217,6 +217,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 2064083182}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: B10
@@ -2217,6 +2221,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 383989825}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: B3
@@ -2538,6 +2546,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1646316797}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D
@@ -2552,7 +2564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.73
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3777,6 +3789,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1504260945}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: B6
@@ -3849,6 +3865,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1330116802}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: C (6)
@@ -3863,7 +3883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4
+      value: 1.65
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4397,6 +4417,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 517529491}
     m_Modifications:
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: A2
@@ -4411,7 +4435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.55
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7604,6 +7628,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1151122812}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: B4
@@ -7923,6 +7951,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1993492602}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D (3)
@@ -8252,6 +8284,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1541593523}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: B8
@@ -8324,6 +8360,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1151687384}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D (11)
@@ -9201,6 +9241,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 517529491}
     m_Modifications:
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: A6
@@ -9215,7 +9259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.64
+      value: 1.87
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10125,6 +10169,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1108995446}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: C (4)
@@ -10139,7 +10187,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.99
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11248,6 +11296,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 2032979593}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D (9)
@@ -20559,6 +20611,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1952875423}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D (5)
@@ -21518,6 +21574,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1880469848}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D (14)
@@ -21532,7 +21592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 9.79
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22927,6 +22987,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 517529491}
     m_Modifications:
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: A1
@@ -22941,7 +23005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.625
+      value: 2.36
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -23115,6 +23179,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 246023114607391365, guid: de7362264fbb35945a5c8bd4c04f44d6, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 246023114607391365, guid: de7362264fbb35945a5c8bd4c04f44d6, type: 3}
       propertyPath: m_patrols.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -23134,6 +23202,10 @@ PrefabInstance:
       propertyPath: m_patrols.Array.data[3]
       value: 
       objectReference: {fileID: 1478654411}
+    - target: {fileID: 246023114607391366, guid: de7362264fbb35945a5c8bd4c04f44d6, type: 3}
+      propertyPath: m_Radius
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 246023114607391367, guid: de7362264fbb35945a5c8bd4c04f44d6, type: 3}
       propertyPath: m_SpotAngle
       value: 60
@@ -23159,6 +23231,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 169136007}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: C (5)
@@ -23173,7 +23249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.26
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24344,6 +24420,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 167697088}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: B5
@@ -24493,6 +24573,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1975897556}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D (12)
@@ -24507,7 +24591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.3
+      value: 4.24
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -25354,6 +25438,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1454628568}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: C (8)
@@ -26995,6 +27083,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 584855340}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D (8)
@@ -27009,7 +27101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.83
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27879,6 +27971,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1186241405}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: C (7)
@@ -27893,7 +27989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.31
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28766,6 +28862,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 538243378}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: C (3)
@@ -29522,6 +29622,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1480764935}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: B12
@@ -30003,6 +30107,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1972764696}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: C (9)
@@ -30152,6 +30260,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 399841400}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D (2)
@@ -30166,7 +30278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.28
+      value: 3.32
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -30574,6 +30686,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 2039784235}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: B1
@@ -33623,6 +33739,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 517529491}
     m_Modifications:
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: A3
@@ -33637,7 +33757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.94
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33761,6 +33881,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 430530697}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: B7
@@ -34404,6 +34528,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 15338928}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: B9
@@ -35367,6 +35495,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 517529491}
     m_Modifications:
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: A4
@@ -35381,7 +35513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.89
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -35582,6 +35714,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1466897249}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D (1)
@@ -39249,6 +39385,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1287760454}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D (7)
@@ -39263,7 +39403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -40454,6 +40594,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 106287426}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D (15)
@@ -40468,7 +40612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 7.95
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -40769,6 +40913,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 2090928504}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: C (1)
@@ -41416,6 +41564,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1805736173}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D (6)
@@ -41430,7 +41582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.63
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -41565,6 +41717,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1984220081}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: C (10)
@@ -41637,6 +41793,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1006332444}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D (13)
@@ -41875,6 +42035,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1901998548}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: C
@@ -41947,6 +42111,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 931155791}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D (4)
@@ -44869,6 +45037,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 434619422}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: D (10)
@@ -45018,6 +45190,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 104901248}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: B2
@@ -45604,6 +45780,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1410519934}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: B11
@@ -46927,6 +47107,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 517529491}
     m_Modifications:
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: A5
@@ -46941,7 +47125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.27
+      value: 1.41
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -47148,6 +47332,10 @@ PrefabInstance:
       propertyPath: m_NextPatrolPoint
       value: 
       objectReference: {fileID: 1348830211}
+    - target: {fileID: 68419566714534101, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
+      propertyPath: m_distanceThreshold
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1589974054619104733, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_Name
       value: C (2)
@@ -47162,7 +47350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.95
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 7555386369983889119, guid: 0d6078ddb34c0ec469f76ee9200ee681, type: 3}
       propertyPath: m_LocalPosition.z

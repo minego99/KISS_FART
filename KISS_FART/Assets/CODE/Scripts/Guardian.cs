@@ -12,7 +12,7 @@ public class Guardian : MonoBehaviour
     private float m_timeOnPoint;
 
     [SerializeField]
-    private float m_travelTime;
+    private float m_travelTime, m_distanceThreshold;
     private float m_travelAlpha = 0;
 
     private bool m_isTraveling = false;
@@ -41,6 +41,7 @@ public class Guardian : MonoBehaviour
         {
             TravelToAnotherPoint(m_currentPoint, m_nextPoint);
         }
+        
     }
 
     private void StayOnPoint(PatrolPoint point)
@@ -70,7 +71,23 @@ public class Guardian : MonoBehaviour
     {
         if(m_travelAlpha < 1)
         {
-            transform.position = Vector3.Lerp(currentPoint.transform.position, nextPoint.transform.position, m_travelAlpha);
+            Vector3 currentPosition = transform.position;
+            float yPos;
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, Vector3.down, out hit, m_distanceThreshold))
+            {
+                float distanceFromGround = hit.distance;
+                yPos = currentPosition.y + (m_distanceThreshold - distanceFromGround);
+                //transform.position = new Vector3(currentPosition.x, currentPosition.y + (m_distanceThreshold - distanceFromGround), currentPosition.z);
+            }
+            else
+            {
+                yPos = Mathf.Lerp(currentPoint.transform.position.y, nextPoint.transform.position.y, m_travelAlpha);
+            }
+            //transform.position = Vector3.Lerp(currentPoint.transform.position, nextPoint.transform.position, m_travelAlpha);
+            float xPos = Mathf.Lerp(currentPoint.transform.position.x, nextPoint.transform.position.x, m_travelAlpha);
+            float zPos = Mathf.Lerp(currentPoint.transform.position.z, nextPoint.transform.position.z, m_travelAlpha);
+            transform.position = new Vector3(xPos, yPos, zPos);
             m_travelAlpha =Mathf.Clamp01(m_travelAlpha + Time.deltaTime / m_travelTime);
         }
         else
