@@ -41914,6 +41914,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: EggTest
       objectReference: {fileID: 0}
+    - target: {fileID: 261182638861516879, guid: e8c505921111e6e4998440fe2b63c3ea, type: 3}
+      propertyPath: m_Height
+      value: 4.269721
+      objectReference: {fileID: 0}
+    - target: {fileID: 261182638861516879, guid: e8c505921111e6e4998440fe2b63c3ea, type: 3}
+      propertyPath: m_Radius
+      value: 0.9033221
+      objectReference: {fileID: 0}
+    - target: {fileID: 261182638861516879, guid: e8c505921111e6e4998440fe2b63c3ea, type: 3}
+      propertyPath: m_Center.x
+      value: 0.40332213
+      objectReference: {fileID: 0}
+    - target: {fileID: 261182638861516879, guid: e8c505921111e6e4998440fe2b63c3ea, type: 3}
+      propertyPath: m_Center.y
+      value: 1.1348603
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8c505921111e6e4998440fe2b63c3ea, type: 3}
 --- !u!1001 &2319285869330024013
