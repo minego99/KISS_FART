@@ -252,6 +252,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1704a8a2b140574d983fc121b68a2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_minimumPatrolDistance: 0
+  m_patrolMaxDistance: 0
+  m_navMeshSnapMaxDistance: 0
+  m_minTimeOnPoint: 0
+  m_maxTimeOnPoint: 0
 --- !u!65 &65790122
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -456,6 +461,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1704a8a2b140574d983fc121b68a2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_minimumPatrolDistance: 0
+  m_patrolMaxDistance: 0
+  m_navMeshSnapMaxDistance: 0
+  m_minTimeOnPoint: 0
+  m_maxTimeOnPoint: 0
 --- !u!65 &196015914
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -566,6 +576,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1704a8a2b140574d983fc121b68a2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_minimumPatrolDistance: 0
+  m_patrolMaxDistance: 0
+  m_navMeshSnapMaxDistance: 0
+  m_minTimeOnPoint: 0
+  m_maxTimeOnPoint: 0
 --- !u!65 &242028716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -843,6 +858,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1704a8a2b140574d983fc121b68a2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_minimumPatrolDistance: 0
+  m_patrolMaxDistance: 0
+  m_navMeshSnapMaxDistance: 0
+  m_minTimeOnPoint: 0
+  m_maxTimeOnPoint: 0
 --- !u!65 &593187038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1091,6 +1111,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1704a8a2b140574d983fc121b68a2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_minimumPatrolDistance: 0
+  m_patrolMaxDistance: 0
+  m_navMeshSnapMaxDistance: 0
+  m_minTimeOnPoint: 0
+  m_maxTimeOnPoint: 0
 --- !u!65 &721881189
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1232,6 +1257,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1704a8a2b140574d983fc121b68a2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_minimumPatrolDistance: 0
+  m_patrolMaxDistance: 0
+  m_navMeshSnapMaxDistance: 0
+  m_minTimeOnPoint: 0
+  m_maxTimeOnPoint: 0
 --- !u!65 &814482112
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1420,6 +1450,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1704a8a2b140574d983fc121b68a2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_minimumPatrolDistance: 0
+  m_patrolMaxDistance: 0
+  m_navMeshSnapMaxDistance: 0
+  m_minTimeOnPoint: 0
+  m_maxTimeOnPoint: 0
 --- !u!1 &965944136
 GameObject:
   m_ObjectHideFlags: 0
@@ -1452,6 +1487,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1704a8a2b140574d983fc121b68a2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_minimumPatrolDistance: 0
+  m_patrolMaxDistance: 0
+  m_navMeshSnapMaxDistance: 0
+  m_minTimeOnPoint: 0
+  m_maxTimeOnPoint: 0
 --- !u!65 &965944138
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1778,7 +1818,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -6837,7 +6877,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1623405011
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7026,6 +7066,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1704a8a2b140574d983fc121b68a2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_minimumPatrolDistance: 0
+  m_patrolMaxDistance: 0
+  m_navMeshSnapMaxDistance: 0
+  m_minTimeOnPoint: 0
+  m_maxTimeOnPoint: 0
 --- !u!1 &1830833847
 GameObject:
   m_ObjectHideFlags: 0
@@ -7058,6 +7103,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1704a8a2b140574d983fc121b68a2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_minimumPatrolDistance: 0
+  m_patrolMaxDistance: 0
+  m_navMeshSnapMaxDistance: 0
+  m_minTimeOnPoint: 0
+  m_maxTimeOnPoint: 0
 --- !u!65 &1830833849
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7457,6 +7507,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1704a8a2b140574d983fc121b68a2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_minimumPatrolDistance: 0
+  m_patrolMaxDistance: 0
+  m_navMeshSnapMaxDistance: 0
+  m_minTimeOnPoint: 0
+  m_maxTimeOnPoint: 0
 --- !u!1 &1999980685
 GameObject:
   m_ObjectHideFlags: 0
@@ -7489,6 +7544,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1704a8a2b140574d983fc121b68a2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_minimumPatrolDistance: 0
+  m_patrolMaxDistance: 0
+  m_navMeshSnapMaxDistance: 0
+  m_minTimeOnPoint: 0
+  m_maxTimeOnPoint: 0
 --- !u!65 &1999980687
 BoxCollider:
   m_ObjectHideFlags: 0
