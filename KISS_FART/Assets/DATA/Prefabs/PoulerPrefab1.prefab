@@ -4983,11 +4983,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1704a8a2b140574d983fc121b68a2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_minimumPatrolDistance: 0
-  m_patrolMaxDistance: 0
-  m_navMeshSnapMaxDistance: 0
-  m_minTimeOnPoint: 0
-  m_maxTimeOnPoint: 0
+  m_minimumPatrolDistance: 1
+  m_patrolMaxDistance: 3
+  m_navMeshSnapMaxDistance: 3
+  m_minTimeOnPoint: 2
+  m_maxTimeOnPoint: 5
   m_dinoBack: {fileID: 0}
   m_isOnDino: 0
 --- !u!95 &2189771139331635736

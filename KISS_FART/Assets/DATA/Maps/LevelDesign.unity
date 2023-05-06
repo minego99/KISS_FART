@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: d632b4dc490654a4ebebe6a70d482ac6, type: 2}
 --- !u!1 &9309083
 GameObject:
   m_ObjectHideFlags: 0
@@ -13029,6 +13029,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2189771139331635750, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
+      propertyPath: m_maxTimeOnPoint
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189771139331635750, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
+      propertyPath: m_minTimeOnPoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189771139331635750, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
+      propertyPath: m_patrolMaxDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189771139331635750, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
+      propertyPath: m_minimumPatrolDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189771139331635750, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
+      propertyPath: m_navMeshSnapMaxDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2189771139331635751, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
       propertyPath: m_Name
       value: PoulerPrefab1 (2)
@@ -24098,6 +24118,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2189771139331635750, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
+      propertyPath: m_maxTimeOnPoint
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189771139331635750, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
+      propertyPath: m_minTimeOnPoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189771139331635750, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
+      propertyPath: m_patrolMaxDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189771139331635750, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
+      propertyPath: m_minimumPatrolDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189771139331635750, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
+      propertyPath: m_navMeshSnapMaxDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2189771139331635751, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
       propertyPath: m_Name
       value: PoulerPrefab1 (1)
@@ -27428,6 +27468,26 @@ PrefabInstance:
     - target: {fileID: 2189771139331635738, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189771139331635750, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
+      propertyPath: m_maxTimeOnPoint
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189771139331635750, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
+      propertyPath: m_minTimeOnPoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189771139331635750, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
+      propertyPath: m_patrolMaxDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189771139331635750, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
+      propertyPath: m_minimumPatrolDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189771139331635750, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
+      propertyPath: m_navMeshSnapMaxDistance
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2189771139331635751, guid: 6d35947046015fb4dac60c74fb75a1fc, type: 3}
       propertyPath: m_Name
