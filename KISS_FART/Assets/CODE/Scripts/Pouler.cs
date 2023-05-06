@@ -129,23 +129,23 @@ public class Pouler : MonoBehaviour
     {
         Destroy(gameObject);
     }
-    private void OnTriggerStay(Collider other)
-    {
-        if (GameManager.s_doesattack == true)
-        {
-            if (other.CompareTag("Mouth") == true)
-            {
-                m_animator.SetTrigger("Death");
-            }
-        }
-        else
-        {
-            if (other.CompareTag("Mouth") == true)
-            {
-                transform.position = transform.position; /*dinobacktransform*/
-            }
-        }
-    }
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    if (GameManager.s_doesattack == true)
+    //    {
+    //        if (other.CompareTag("Mouth") == true)
+    //        {
+    //            m_animator.SetTrigger("Death");
+    //        }
+    //    }
+    //    else
+    //    {
+    //        if (other.CompareTag("Mouth") == true)
+    //        {
+    //            transform.position = transform.position; /*dinobacktransform*/
+    //        }
+    //    }
+    //}
 
 
     void Start()
@@ -174,9 +174,10 @@ public class Pouler : MonoBehaviour
     {
         Vector3 newPatrolPoint = GeneratePatrolPoint(m_patrolMaxDistance) + transform.position;
         NavMeshHit patrolHit;
+        int i = 0;
 
         //Checking closest point on the navmesh and snapping to it at https://docs.unity3d.com/ScriptReference/AI.NavMesh.SamplePosition.html & https://forum.unity.com/threads/finding-closest-point-on-navmesh.284775/
-        while (!NavMesh.SamplePosition(newPatrolPoint, out patrolHit, m_navMeshSnapMaxDistance, -1) || CheckPositionInRadius(newPatrolPoint, transform.position, m_minimumPatrolDistance))
+        while (!NavMesh.SamplePosition(newPatrolPoint, out patrolHit, m_navMeshSnapMaxDistance, -1) || CheckPositionInRadius(newPatrolPoint, transform.position, m_minimumPatrolDistance) && (i < 30))
         {
             newPatrolPoint = GeneratePatrolPoint(m_patrolMaxDistance) + transform.position;
         }
