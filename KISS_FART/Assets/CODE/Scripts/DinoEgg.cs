@@ -37,7 +37,7 @@ public class DinoEgg : MonoBehaviour
     }
     void TakeEggOn()
     {
-        Debug.Log("Egg si now on");
+      //  Debug.Log("Egg si now on");
         m_isEggOnBack = true;
     }
     private void Update()
