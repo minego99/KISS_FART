@@ -674,7 +674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_focusPoint: {fileID: 1263737704}
-  m_cameraAnchor: {fileID: 1247346286}
+  m_cameraAnchor: {fileID: 0}
   m_MovementSmoothing: 0.2
   m_offset: {x: 0, y: 3.8, z: -3.5}
 --- !u!1 &1093344997
