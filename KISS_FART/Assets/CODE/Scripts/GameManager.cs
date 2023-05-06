@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
     {
         s_doesattack = true;
     }
-
+ 
     public void CantAttack()
     {
         s_doesattack = false;

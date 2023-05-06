@@ -163,10 +163,6 @@ public class Pouler : MonoBehaviour
         transform.position = m_dinoBack.position;
     }
 
-    void Start()
-    {
-
-    }
 
     void Update()
     {
