@@ -56,7 +56,7 @@ public class DinoEgg : MonoBehaviour
         {
             
             Debug.Log("GOes not on back");
-            transform.position = transform.position;
+            transform.SetParent(null);
             DinoMovement.s_instance.m_hasEgg = false;
         }
         if (Input.GetButtonDown("Fire1"))

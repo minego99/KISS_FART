@@ -167,6 +167,7 @@ public class Pouler : MonoBehaviour
     private void GetPoulerOnBack()
     {
         transform.SetParent(m_dinoBack);
+        transform.position = Vector3.zero;
     }
 
 
