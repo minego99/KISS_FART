@@ -15,14 +15,14 @@ public class DinoMovement : MonoBehaviour
     private float m_controlSmoothing, m_smoothingFactor, m_deadzone;
     private float m_currentSmoothing;
     private float m_gravity = 9.81f;
-    public int m_poulerToLayEgg = 5;
+    public int m_poulerneededToLayAnEgg = 5;
     public GameObject m_eggPrefab;
     public static Transform s_backPosition;
     //   public static Transform s_backPosition;
     public Transform m_layEggPosition;
     public bool m_mouthActivated;
 
-
+    public bool m_hasEgg;
     public Transform m_dinoBack;
 
     private void Awake()
@@ -41,7 +41,7 @@ public class DinoMovement : MonoBehaviour
         }
         void LayEgg()
         {
-            if (GameManager.s_poulerScore >= m_poulerToLayEgg)
+            if (GameManager.s_poulerScore >= m_poulerneededToLayAnEgg)
             {
                 GameManager.s_poulerScore = 0;
                 m_animator.SetTrigger("LayEgg");
@@ -81,7 +81,7 @@ public class DinoMovement : MonoBehaviour
         private void Update()
         {
             LayEgg();
-            Debug.Log(GameManager.s_poulerScore);
+          //  Debug.Log(GameManager.s_poulerScore);
             ManageMouth();
             Action();
             float horizontal = Input.GetAxis("Horizontal");

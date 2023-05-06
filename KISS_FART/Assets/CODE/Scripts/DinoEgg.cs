@@ -42,16 +42,22 @@ public class DinoEgg : MonoBehaviour
     }
     private void Update()
     {
+
         
         if (m_isEggOnBack == true)
         {
             Debug.Log("Go on back");
-            transform.position = DinoMovement.s_instance.m_dinoBack.position;
+            transform.SetParent(DinoMovement.s_instance.m_dinoBack);
+            transform.position = Vector3.zero;
+          //  transform.position = DinoMovement.s_instance.m_dinoBack.position;
+            DinoMovement.s_instance.m_hasEgg = true;
         }
         if (m_isEggOnBack == false)
         {
+            
             Debug.Log("GOes not on back");
             transform.position = transform.position;
+            DinoMovement.s_instance.m_hasEgg = false;
         }
         if (Input.GetButtonDown("Fire1"))
         {
@@ -61,6 +67,8 @@ public class DinoEgg : MonoBehaviour
                 m_isEggOnBack = false;
             }
         }
+
+        Debug.Log(DinoMovement.s_instance.m_hasEgg);
     }
 
 

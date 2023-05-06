@@ -11,10 +11,12 @@ public class Nest : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.CompareTag("Egg") == true)
+        if (collision.collider.CompareTag("Egg") == true && DinoMovement.s_instance.m_hasEgg == true) 
         {
+            Debug.Log("Nest  has Egg");
             Debug.Log("Egg +1");
            GameManager.s_instance.m_currentEggsNumber++;
+
         }
     }
 
