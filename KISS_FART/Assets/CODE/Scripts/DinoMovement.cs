@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class DinoMovement : MonoBehaviour
 {
-  [SerializeField] private CharacterController m_controller ;
-  [SerializeField]  float m_speed;
+    private CharacterController m_controller ;
+    [SerializeField]  float m_speed;
 
     private Vector3 m_oldDir, m_currentDir;
 
@@ -19,6 +19,11 @@ public class DinoMovement : MonoBehaviour
     private void Awake()
     {
         PlayerInput inputs = new PlayerInput();
+    }
+
+    private void Start()
+    {
+        m_controller = GetComponent<CharacterController>();
     }
 
     private void Update()
