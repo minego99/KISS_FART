@@ -10,6 +10,9 @@ public class CameraMovement : MonoBehaviour
     private Transform m_focusPoint, m_cameraAnchor;
     [SerializeField]
     private float m_MovementSmoothing;
+
+    [SerializeField]
+    private Vector3 m_offset;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +24,8 @@ public class CameraMovement : MonoBehaviour
     {
         //transform.LookAt(m_focusPoint);
      
-        transform.position = Vector3.Lerp(transform.position, m_cameraAnchor.position, Mathf.Clamp01(m_MovementSmoothing + Time.deltaTime));
-        transform.rotation =  m_cameraAnchor.rotation;
+        transform.position = Vector3.Lerp(transform.position, m_focusPoint.position + m_offset, Mathf.Clamp01(m_MovementSmoothing + Time.deltaTime));
+        //transform.rotation =  m_cameraAnchor.rotation;
 
     }
 
