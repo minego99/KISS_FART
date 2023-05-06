@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17908643, g: 0.22424082, b: 0.30603132, a: 1}
+  m_IndirectSpecularColor: {r: 0.17908673, g: 0.22424102, b: 0.30603203, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -983,7 +983,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217713716}
   m_LocalRotation: {x: 0.29428077, y: -0, z: -0, w: 0.955719}
-  m_LocalPosition: {x: -1.8768656, y: 4.414, z: -4.74952}
+  m_LocalPosition: {x: -0.00000032052702, y: 4.35, z: -3.5000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1002,7 +1002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bd7affa4f23eb7428a5ecbfc8394110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_focusPoint: {fileID: 0}
+  m_focusPoint: {fileID: 1903929620}
   m_cameraAnchor: {fileID: 0}
   m_MovementSmoothing: 0.5
   m_offset: {x: 0, y: 3.8, z: -3.5}
@@ -8115,6 +8115,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aead5e8417f81ba45ba426e3e67a3b61, type: 3}
+--- !u!4 &1903929620 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1028217522506629751, guid: d230463257a69f64ba4f835526d9d9f1, type: 3}
+  m_PrefabInstance: {fileID: 1832691608}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1939990249
 PrefabInstance:
   m_ObjectHideFlags: 0
