@@ -32,6 +32,7 @@ public class DinoMovement : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
 
         Vector3 move = new Vector3(horizontal, 0, vertical) * m_speed * Time.deltaTime - Vector3.up * m_gravity;
+        transform.rotation = Quaternion.Euler(0, -Vector2.SignedAngle(Vector2.up, new Vector2(horizontal, vertical)), 0);
         m_controller.Move(move);
     }
 
