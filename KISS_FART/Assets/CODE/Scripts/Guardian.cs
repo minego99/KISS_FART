@@ -86,4 +86,15 @@ public class Guardian : MonoBehaviour
         int randomPatrol = Random.Range(0, m_patrols.Length);
         m_currentPatrol = m_patrols[randomPatrol];
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#endif
+            Application.Quit();
+        }
+    }
 }
