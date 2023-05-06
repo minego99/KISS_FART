@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class DinoMovement : MonoBehaviour
 {
+    public static DinoMovement s_instance; 
     Animator m_animator;
     private CharacterController m_controller;
     [SerializeField] float m_speed;
@@ -18,15 +19,19 @@ public class DinoMovement : MonoBehaviour
     private float m_gravity = 9.81f;
     public int m_poulerToLayEgg = 5;
     public GameObject m_eggPrefab;
-    public static Transform s_backPosition;
+ //   public static Transform s_backPosition;
     public Transform m_layEggPosition;
      public bool m_mouthActivated;
 
-   
+    public Transform m_dinoBack;
+
     private void Awake()
-    {
-        s_backPosition = GetComponent<Transform>();
-        s_backPosition.position = transform.position += new Vector3(0, 1.5f, 0);
+    {if(s_instance == null)
+        {
+            s_instance = this;
+        }
+        
+      
         m_animator = GetComponent<Animator>();
         PlayerInput inputs = new PlayerInput();
     }
