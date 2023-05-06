@@ -5,35 +5,90 @@ using UnityEngine;
 
 public class DinoMovement : MonoBehaviour
 {
-    private CharacterController m_controller ;
-    [SerializeField]  float m_speed;
-
+    Animator m_animator;
+    private CharacterController m_controller;
+    [SerializeField] float m_speed;
+    
     private Vector3 m_oldDir, m_currentDir;
-
+    public GameObject m_mouthObject;
     [SerializeField]
     private float m_controlSmoothing, m_smoothingFactor, m_deadzone;
     private float m_currentSmoothing;
 
     private float m_gravity = 9.81f;
+    public int m_poulerToLayEgg = 5;
+    public GameObject m_eggPrefab;
+    public static Transform m_backPosition;
+    public Transform s_layEggPosition;
+     public bool m_mouthActivated;
 
+   
     private void Awake()
     {
+        
+        m_animator = GetComponent<Animator>();
         PlayerInput inputs = new PlayerInput();
     }
-
+    void LayEgg()
+    {
+        if (GameManager.s_poulerCount >= m_poulerToLayEgg)
+        {
+            m_animator.SetTrigger("LayEgg");
+        }
+    }
+    void InstantiateEgg()
+    {
+        Instantiate(m_eggPrefab, s_layEggPosition.transform);
+    }
+    void ManageMouth()
+    {
+        m_mouthObject.SetActive(m_mouthActivated);
+    }
     private void Start()
     {
         m_controller = GetComponent<CharacterController>();
     }
+   
+    void Action()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            if(GameManager.s_doesattack == true)
+            {
+                m_animator.SetTrigger("Eat");
+            }
 
+           else 
+            {
+                m_animator.SetTrigger("Take");
+            }
+
+
+        }
+    }
     private void Update()
     {
+
+        ManageMouth();
+        Action();
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Vector3 move = new Vector3(horizontal, 0, vertical) * m_speed * Time.deltaTime - Vector3.up * m_gravity;
-        transform.rotation = Quaternion.Euler(0, -Vector2.SignedAngle(Vector2.up, new Vector2(horizontal, vertical)), 0);
-        m_controller.Move(move);
+       
+        Vector3 move = new Vector3(horizontal, 0, vertical) * m_speed * Time.deltaTime ;
+      if(vertical != 0 || horizontal != 0)
+        {
+  transform.rotation = Quaternion.Euler(0, -Vector2.SignedAngle(Vector2.up, new Vector2(horizontal, vertical)), 0);
+      
+        m_controller.Move(move - Vector3.up * m_gravity);
+        
+        
+        }
+        //Debug.Log("move is" + move);
+        //Debug.Log("move normalized is " + move.normalized);
+        //Debug.Log("move magnitude is"+ move.magnitude);
+        //Debug.Log("move normalized sqr magnitude is" + move.normalized.sqrMagnitude);
+    // m_animator.SetFloat("Speed", move.magnitude /2 );
     }
 
     //public void ChangeDirection(InputAction.CallbackContext context)

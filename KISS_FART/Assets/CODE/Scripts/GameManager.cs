@@ -15,9 +15,10 @@ public class GameManager : MonoBehaviour
     float m_currentTimeRotation = 120;
     public Transform m_playerTransform;
     public Transform m_nestPosition;
-   public static bool s_doesattack = false;
+ public static bool s_doesattack = false;
    public static bool s_patrolFarmer = false;
-    public static int m_poulerCount = 0;
+    public static int s_poulerCount = 0;
+
    private void Awake()
     {
         if(s_instance == null)
@@ -162,5 +163,7 @@ public class GameManager : MonoBehaviour
         TimePass();
         SwitchDayAndNight();
         Debug.Log(m_currentTime);
+        Debug.Log("doesattack is  " + s_doesattack);
+        
     }
 }
