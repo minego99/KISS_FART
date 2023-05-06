@@ -15,8 +15,16 @@ public class GameManager : MonoBehaviour
     float m_currentTimeRotation = 120;
     public Transform m_playerTransform;
     public Transform m_nestPosition;
+    static bool s_doesattack = false;
    private void Awake()
     {
+        if(s_instance == null)
+        {
+            s_instance = this;
+
+
+        }
+      
         m_currentTimeRotation = m_maxTimeRotation;  
         m_animator = GetComponent<Animator>();
     }
@@ -35,7 +43,15 @@ public class GameManager : MonoBehaviour
             m_currentTimeRotation = m_maxTimeRotation;
         }
     }
- 
+
+    public void CanAttack()
+    {
+        s_doesattack = true;
+    }
+    public void CantAttack()
+    {
+        s_doesattack = false;
+    }
     public enum EGameState
     {
         Pause,
