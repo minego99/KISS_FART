@@ -6,12 +6,35 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField]
     bool m_switchTimeState = false;
-     [SerializeField] Light m_directionnalLight;
-
-    private void Awake()
+     [SerializeField] Transform m_directionnalLight;
+    public float m_nightRotation = -10f;
+    public float m_dayRotation = 25f;
+    public Animator m_animator;
+    public float m_maxTimeRotation = 120;
+    float m_currentTimeRotation = 120;
+    public Transform m_playerTransform;
+    public Transform m_nestPosition;
+   private void Awake()
     {
-       
+        m_currentTimeRotation = m_maxTimeRotation;  
+        m_animator = GetComponent<Animator>();
     }
+    void TimePass()
+    {
+        if(m_currentTimeRotation >= 0)
+        {
+
+        m_currentTimeRotation -= Time.deltaTime;
+
+
+        }
+        else
+        {
+            m_switchTimeState = true;
+            m_currentTimeRotation = m_maxTimeRotation;
+        }
+    }
+ 
     public enum EGameState
     {
         Pause,
@@ -33,36 +56,51 @@ public class GameManager : MonoBehaviour
             m_switchTimeState = false;
         }
     }
+
     void SwitchPlayState(ETimeState newstate)
     {
         ExitTimeState(m_currentTime);
-        m_currentTime = newstate;
+        newstate = m_currentTime  ;
+        Debug.Log("Switch play state is " + newstate);
         EnterTimeState(newstate);
     }
     void EnterDayState() 
     {
-        float dayRotation = 25;
+       // float dayRotation = 25;
         Debug.Log("C'est le jour");
-    //    m_directionnalLight.transform.rotation.x = dayRotation;
-       ;
-    }
-    void ExitDayState()
-    {
+       m_animator.SetTrigger("SunRise");
+       // Quaternion newRotation = Quaternion.Euler(m_dayRotation, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+       //m_directionnalLight.transform.rotation = newRotation;
 
-    }
-    void ExitNightState()
-    {
-
-    }
+       
+    } 
     void EnterNightState()
     {
         Debug.Log("C'est la nuit");
-        float currentRotation = m_directionnalLight.transform.rotation.x;
-        currentRotation = -10;
+        // float nightRotation = -10;
+        m_animator.SetTrigger("SunDown");
+      //  Quaternion newRotation = Quaternion.Euler(m_nightRotation, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+      //m_directionnalLight.transform.rotation = newRotation/*;*/
     }
+    public void ReturnToNest()
+    {
+
+        m_playerTransform.position = m_nestPosition.position;
+    }
+    void ExitDayState()
+    {
+        Debug.Log("ExitDayState");
+        m_currentTime = ETimeState.Night;
+    }
+    void ExitNightState()
+    {
+        Debug.Log("ExitNightState");
+        m_currentTime = ETimeState.Day;
+    }
+   
     void EnterTimeState(ETimeState newstate)
     {
-switch (m_currentTime)
+        switch (m_currentTime)
         {
             case ETimeState.Day:
                 EnterDayState();
@@ -77,19 +115,23 @@ switch (m_currentTime)
     {
         switch (m_currentTime)
         {
+
             case ETimeState.Day:
                 ExitDayState();
+               
+
                 break;
 
             case ETimeState.Night:
                 ExitNightState();
+
+                
                 break;
         }
     }
-  
-    // Update is called once per frame
     void Update()
     {
+        TimePass();
         SwitchDayAndNight();
         Debug.Log(m_currentTime);
     }
