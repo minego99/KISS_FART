@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public Transform m_nestPosition;
    public static bool s_doesattack = false;
    public static bool s_patrolFarmer = false;
+    public static int m_poulerCount = 0;
    private void Awake()
     {
         if(s_instance == null)
