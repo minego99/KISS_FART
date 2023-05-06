@@ -6,28 +6,26 @@ public class DinoEgg : MonoBehaviour
 {
     bool m_isEggOnBack = false;
    
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-          if (GameManager.s_doesattack == false)
-           {
-            if (other == CompareTag("Mouth") && m_isEggOnBack == false)
 
+
+        if (GameManager.s_doesattack == false)
+        {
+            if (other.CompareTag("Mouth") == true && m_isEggOnBack == false)
             {
-                Debug.Log("take egg on");
                 TakeEggOn();
             }
-
-            else if (other == CompareTag("Mouth") && m_isEggOnBack == true)
-            {
-
-                {
-                    Debug.Log("take egg off");
-                    TakeEggOff();
-                }
-
-            }
-
         }
+        else
+        {
+            if (other.CompareTag("Mouth") == true)
+            {
+                TakeEggOff();
+            }
+        }
+
+       
 
     }
     void TakeEggOff()
@@ -36,16 +34,19 @@ public class DinoEgg : MonoBehaviour
     }
     void TakeEggOn()
     {
+        Debug.Log("Egg si now on");
         m_isEggOnBack = true;
     }
     private void Update()
     {
         if (m_isEggOnBack == true)
         {
+            Debug.Log("Go on back");
             transform.position = DinoMovement.s_instance.m_dinoBack.position;
         }
         if (m_isEggOnBack == false)
         {
+            Debug.Log("GOes not on back");
             transform.position = transform.position;
         }
 
