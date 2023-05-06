@@ -9,13 +9,13 @@ public class DinoEgg : MonoBehaviour
     {
         if (GameManager.s_doesattack == false)
         {
-            if(collision.collider == CompareTag("Mouth") && m_isEggOnBack == false)
+            if (collision.collider == CompareTag("Mouth") && m_isEggOnBack == false)
 
-                {
+            {
                 TakeEggOn();
-                }
+            }
 
-             else if(collision.collider == CompareTag("Mouth") && m_isEggOnBack == true)
+            else if (collision.collider == CompareTag("Mouth") && m_isEggOnBack == true)
             {
 
                 {
@@ -25,13 +25,13 @@ public class DinoEgg : MonoBehaviour
             }
 
         }
-      
-         
-        
+
+
+
     }
     void TakeEggOff()
     {
-      m_isEggOnBack = false;
+        m_isEggOnBack = false;
     }
     void TakeEggOn()
     {
@@ -39,14 +39,14 @@ public class DinoEgg : MonoBehaviour
     }
     private void Update()
     {
-        if(m_isEggOnBack == true)
+        if (m_isEggOnBack == true)
         {
-            transform.position = DinoMovement.m_backPosition.position;
+            transform.position = DinoMovement.s_instance.m_dinoBack.position;
         }
-        if(m_isEggOnBack == false)
+        if (m_isEggOnBack == false)
         {
             transform.position = transform.position;
         }
-    
+
     }
 }
