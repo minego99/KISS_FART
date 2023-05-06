@@ -22,22 +22,26 @@ public class Pouler : MonoBehaviour
     {
         Destroy(gameObject);
     }
-    public void OnCollisionEnter(Collision collision)
+    private void OnTriggerStay(Collider other)
     {
-        if(GameManager.s_doesattack == true)
+           if(GameManager.s_doesattack == true)
         {
-            if(collision.collider.CompareTag("Player")== true)
+            if(other.CompareTag("Mouth")== true)
             {
                 m_animator.SetTrigger("Death");
             }
         }
         else
         {
-            if(collision.collider.CompareTag("Player") == true)
+            if(other.CompareTag("Mouth") == true)
             {
                 transform.position = transform.position; /*dinobacktransform*/
             }
         }
+    }
+    public void OnCollisionEnter(Collision collision)
+    {
+     
     }
     void RandomMovement()
     {   float randomX = Random.Range(m_minPoulerMovement, m_maxPoulerMovement);
