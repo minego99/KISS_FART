@@ -26,11 +26,4 @@ public class Nest : MonoBehaviour
         }
     }
 
-
-
-
-    private void Update()
-    {
-    
-    }
 }
