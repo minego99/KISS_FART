@@ -23,7 +23,10 @@ public class GameManager : MonoBehaviour
     public static int s_poulerScore = 0;
     public int m_poulerScoreToEgg = 5;
     public bool m_hasLayedAnEgg = false;
-    
+    [SerializeField] public AudioSource m_audioSource;
+    [SerializeField] public AudioClip m_dayMusic;
+    [SerializeField] public AudioClip m_nightMusic;
+
     private void Awake()
     {
         if (s_instance == null)
@@ -32,7 +35,7 @@ public class GameManager : MonoBehaviour
 
 
         }
-
+        m_audioSource.PlayOneShot(m_dayMusic);  
         m_currentTimeRotation = m_maxTimeRotation;
         m_animator = GetComponent<Animator>();
     }
@@ -102,7 +105,7 @@ public class GameManager : MonoBehaviour
     void EnterDayState()
     {
         m_animator.SetTrigger("SunRise");
- 
+        m_audioSource.PlayOneShot(m_dayMusic);
 
     }
 
@@ -110,7 +113,8 @@ public class GameManager : MonoBehaviour
     void EnterNightState()
     {
         m_animator.SetTrigger("SunDown");
-       }
+        m_audioSource.PlayOneShot(m_nightMusic);
+    }
     public void ReturnToNest()
     {
 
@@ -119,11 +123,13 @@ public class GameManager : MonoBehaviour
     void ExitDayState()
     {
         m_currentTime = ETimeState.Night;
+        m_audioSource.Stop();
     }
     void ExitNightState()
     {
         // Debug.Log("ExitNightState");
         m_currentTime = ETimeState.Day;
+        m_audioSource.Stop();
     }
 
     void EnterTimeState(ETimeState newstate)
