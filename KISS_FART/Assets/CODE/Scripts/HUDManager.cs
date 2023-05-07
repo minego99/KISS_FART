@@ -22,6 +22,7 @@ public class HUDManager : MonoBehaviour
             m_hudTimeText.sprite = m_friendlyChickenText;
             if (GameManager.s_instance.m_hasLayedAnEgg)
             {
+                m_hudEggText.enabled = true;
                 m_hudEggText.sprite = m_takeEggText;
             }
             else
