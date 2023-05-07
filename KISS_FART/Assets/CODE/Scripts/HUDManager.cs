@@ -18,7 +18,10 @@ public class HUDManager : MonoBehaviour
     public Image m_hudTimeText;
     public Image m_hudEggText;
     public Image m_hudScoreEggText;
-
+    public Image m_hudNestScore;
+    public Sprite m_nestScore1;
+    public Sprite m_nestScore2;
+    public Sprite m_nestScore3;
 
     // Update is called once per frame
     void Update()
