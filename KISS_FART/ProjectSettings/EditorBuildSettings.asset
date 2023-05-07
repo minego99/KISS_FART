@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/DATA/Maps/LevelDesign.unity
+    guid: d5e0cbe36232eb54e93a8a95710bfd92
+  - enabled: 1
     path: Assets/DATA/Scenes/VictoryScene.unity
     guid: 69a59fb04e74a2f46913a2591c06684d
   m_configObjects: {}
