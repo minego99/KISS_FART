@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: a01bfa8016033d644adb99168b09a9ac
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Blood_Chicken_Noises: {fileID: 2800000, guid: 313a7eeec0a4f7240ac8a1fee2acbe03, type: 3}
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
