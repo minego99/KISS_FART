@@ -27,6 +27,7 @@ public class HUDManager : MonoBehaviour
             else
             {
                 m_hudEggText.sprite = null;
+                m_hudEggText.enabled = false;
             }
             if (DinoMovement.s_instance.m_hasEgg)
             {
