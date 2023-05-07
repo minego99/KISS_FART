@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
    public  GameObject m_nestGameObject;
     public static int s_poulerScore = 0;
     public int m_poulerScoreToEgg = 5;
+    
     private void Awake()
     {
         if (s_instance == null)
@@ -160,7 +161,8 @@ public class GameManager : MonoBehaviour
     {
         if (m_currentEggsNumber >= m_maxEggsNumber)
         {
-            m_animator.SetTrigger("WIN");
+            
+           // m_animator.SetTrigger("WIN");
         }
         if (s_poulerScore > m_poulerScoreToEgg)
         {
