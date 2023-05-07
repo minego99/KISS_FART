@@ -52,6 +52,19 @@ public class HUDManager : MonoBehaviour
             m_hudEggText.sprite = m_5EggScore;
         }
 
+        if(GameManager.s_instance.m_currentEggsNumber == 1)
+        {
+            m_hudNestScore.sprite = m_nestScore1;
+        }
+        if (GameManager.s_instance.m_currentEggsNumber == 2)
+        {
+            m_hudNestScore.sprite = m_nestScore2;
+        }
+        if (GameManager.s_instance.m_currentEggsNumber == 3)
+        {
+            m_hudNestScore.sprite = m_nestScore3;
+        }
+
 
         if (GameManager.s_instance.m_currentTime == GameManager.ETimeState.Day)
         {

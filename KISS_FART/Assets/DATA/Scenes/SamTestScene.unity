@@ -898,9 +898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106cd1231d9d3794b9273af90373d8c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_patrols:
-  - {fileID: 575674896}
-  - {fileID: 2142309012}
+  m_currentPatrol: {fileID: 0}
   m_travelTime: 1
   m_distanceThreshold: 0
   m_currentPoint: {fileID: 0}
