@@ -106,7 +106,7 @@ public class Guardian : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && GameManager.s_instance.m_currentTime == GameManager.ETimeState.Night)
         {
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
