@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LightBehaviour : MonoBehaviour
 {
+    //private Light 
     // Start is called before the first frame update
     void Start()
     {
