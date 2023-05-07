@@ -9,7 +9,8 @@ public class HUDManager : MonoBehaviour
     public Sprite m_unfriendlyChickenText;
     public Sprite m_takeEggText;
     public Sprite m_takenEggText;
-    public Image m_hudText;
+    public Image m_hudTimeText;
+    public Image m_hudEggText;
 
    
 
@@ -18,7 +19,25 @@ public class HUDManager : MonoBehaviour
     {
         if (GameManager.s_instance.m_currentTime == GameManager.ETimeState.Day)
         {
-            
+            m_hudTimeText.sprite = m_friendlyChickenText;
+            if (GameManager.s_instance.m_hasLayedAnEgg)
+            {
+                m_hudEggText.sprite = m_takeEggText;
+            }
+            else
+            {
+                m_hudEggText.sprite = null;
+            }
+            if (DinoMovement.s_instance.m_hasEgg)
+            {
+                m_hudEggText.sprite = m_takenEggText;
+            }
         }
+        else
+        {
+            m_hudTimeText.sprite = m_unfriendlyChickenText;
+        }
+
+        
     }
 }
