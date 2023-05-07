@@ -6,7 +6,6 @@ using System.Linq;
 public class Guardian : MonoBehaviour
 {
     [SerializeField]
-    private Patrol[] m_patrols;
     private Patrol m_currentPatrol;
 
     private float m_timeOnPoint;
@@ -26,7 +25,6 @@ public class Guardian : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ChangePatrol();
         m_currentPoint = m_currentPatrol.m_PatrolPoints[0];
     }
 
@@ -52,16 +50,8 @@ public class Guardian : MonoBehaviour
         }
         else
         {
-            if(point == m_currentPatrol.m_PatrolPoints.Last())
-            {
-                ChangePatrol();
-                m_nextPoint = m_currentPatrol.m_PatrolPoints[0];
-            }
-            else
-            {
-              //  Debug.Log("test");
-                m_nextPoint = m_currentPoint.m_NextPatrolPoint;
-            }
+            //  Debug.Log("test");
+            m_nextPoint = m_currentPoint.m_NextPatrolPoint;
             m_travelAlpha = 0;
             m_isTraveling = true;
         }
@@ -98,11 +88,11 @@ public class Guardian : MonoBehaviour
         }
     }
 
-    private void ChangePatrol()
-    {
-        int randomPatrol = Random.Range(0, m_patrols.Length);
-        m_currentPatrol = m_patrols[randomPatrol];
-    }
+    //private void ChangePatrol()
+    //{
+    //    int randomPatrol = Random.Range(0, m_patrols.Length);
+    //    m_currentPatrol = m_patrols[randomPatrol];
+    //}
 
     private void OnTriggerEnter(Collider other)
     {
