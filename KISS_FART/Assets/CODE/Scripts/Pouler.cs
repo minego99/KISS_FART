@@ -18,7 +18,7 @@ public class Pouler : MonoBehaviour
     public Transform m_dinoBack;
     public bool m_isOnDino;
     private Vector3 m_currentDestination;
-
+    public ParticleSystem m_deathParticles;
     //float m_minPoulerMovement = 0.5f;
     //float m_maxPoulerMovement = 1f;
     //Vector3 m_randomMovement = Vector3.zero;
@@ -159,9 +159,14 @@ public class Pouler : MonoBehaviour
 
         }
     }
+    void PlayParticlesDeath()
+    {
+        Instantiate(m_deathParticles, transform.position, transform.rotation);
+
+    }
     public void Death()
     {
-
+        
         AudioSource.PlayClipAtPoint(audioClip, transform.position);
         Destroy(gameObject);
     }
