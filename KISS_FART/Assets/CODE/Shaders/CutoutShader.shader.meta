@@ -2,7 +2,9 @@ fileFormatVersion: 2
 guid: 674d62de5858df64db81f7ce3c2b2a79
 ShaderImporter:
   externalObjects: {}
-  defaultTextures: []
+  defaultTextures:
+  - _ORM: {fileID: 2800000, guid: 206dc0008c2826543886478e7e648c47, type: 3}
+  - _T_grass_blade_O: {fileID: 2800000, guid: 5c2711767bef49e45aaeca4544cf0733, type: 3}
   nonModifiableTextures: []
   preprocessorOverride: 0
   userData: 
