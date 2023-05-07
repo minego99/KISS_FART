@@ -43,8 +43,15 @@ public class Pouler : MonoBehaviour
         switch (m_currentState)
         {
             case EEntityState.Movement:
+                m_currentDestination = DefinePatrolDestination();
+                m_agent.SetDestination(m_currentDestination);
+                m_maxTimeOnCurrentPoint = Random.Range(m_minTimeOnPoint, m_maxTimeOnPoint);
+                m_currentTimeOnPoint = 0;
+                m_agent.isStopped = false;
                 break;
             case EEntityState.Taken:
+                //m_agent.destination = transform.position;
+                m_agent.isStopped = true;
                 break;
             case EEntityState.Death:
                 Destroy(gameObject);
@@ -61,6 +68,7 @@ public class Pouler : MonoBehaviour
             case EEntityState.Movement:
                 break;
             case EEntityState.Taken:
+
                 break;
             case EEntityState.Death:
                 break;
@@ -190,6 +198,7 @@ public class Pouler : MonoBehaviour
             if (m_poulerIsOnBack == true)
             {
                 m_poulerIsOnBack = false;
+                OnSwitchState(EEntityState.Movement);
             }
         }
     }
