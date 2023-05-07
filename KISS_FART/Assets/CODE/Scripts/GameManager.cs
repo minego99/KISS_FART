@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
      public static GameManager s_instance;
@@ -159,10 +159,18 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
+        //if (Input.GetButtonDown("Fire2"))
+        //    {
+
+        //        Debug.Log("win");
+        //        SceneManager.LoadScene("VictoryScene", LoadSceneMode.Single);
+        //    }
         if (m_currentEggsNumber >= m_maxEggsNumber)
         {
-            
-           // m_animator.SetTrigger("WIN");
+           
+            Debug.Log("win");
+            SceneManager.LoadScene("VictoryScene", LoadSceneMode.Single);
+            // m_animator.SetTrigger("WIN");
         }
         if (s_poulerScore > m_poulerScoreToEgg)
         {
