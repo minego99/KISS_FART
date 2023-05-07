@@ -5201,103 +5201,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &88404755
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 88404759}
-  - component: {fileID: 88404758}
-  - component: {fileID: 88404757}
-  - component: {fileID: 88404756}
-  m_Layer: 0
-  m_Name: Cube (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &88404756
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 88404755}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &88404757
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 88404755}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 72f87b63736b97b40b70b2d3fd3fa4ea, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &88404758
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 88404755}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &88404759
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 88404755}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.8899999, y: 1.493, z: 15.36}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &95697445
 GameObject:
   m_ObjectHideFlags: 0
@@ -5312,7 +5215,6 @@ GameObject:
   - component: {fileID: 95697449}
   - component: {fileID: 95697448}
   - component: {fileID: 95697447}
-  - component: {fileID: 95697446}
   m_Layer: 0
   m_Name: Pouler1 (4)
   m_TagString: Untagged
@@ -5320,28 +5222,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &95697446
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 95697445}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &95697447
 Animator:
   serializedVersion: 5
@@ -5475,7 +5355,6 @@ GameObject:
   - component: {fileID: 131344852}
   - component: {fileID: 131344851}
   - component: {fileID: 131344850}
-  - component: {fileID: 131344849}
   m_Layer: 0
   m_Name: Pouler1 (9)
   m_TagString: Untagged
@@ -5483,28 +5362,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &131344849
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131344848}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &131344850
 Animator:
   serializedVersion: 5
@@ -5622,7 +5479,7 @@ Transform:
   m_Children:
   - {fileID: 504819547}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &145260335
 PrefabInstance:
@@ -5633,7 +5490,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6294660108581492562, guid: d80292eb252f886448a2a17b30e77235, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 6294660108581492562, guid: d80292eb252f886448a2a17b30e77235, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20502,7 +20359,6 @@ GameObject:
   - component: {fileID: 460745678}
   - component: {fileID: 460745677}
   - component: {fileID: 460745676}
-  - component: {fileID: 460745675}
   m_Layer: 0
   m_Name: Pouler1 (18)
   m_TagString: Untagged
@@ -20510,28 +20366,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &460745675
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 460745674}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &460745676
 Animator:
   serializedVersion: 5
@@ -20649,7 +20483,7 @@ Transform:
   m_Children:
   - {fileID: 926470253}
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &478472843
 GameObject:
@@ -20665,7 +20499,6 @@ GameObject:
   - component: {fileID: 478472847}
   - component: {fileID: 478472846}
   - component: {fileID: 478472845}
-  - component: {fileID: 478472844}
   m_Layer: 0
   m_Name: Pouler1 (14)
   m_TagString: Untagged
@@ -20673,28 +20506,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &478472844
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478472843}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &478472845
 Animator:
   serializedVersion: 5
@@ -20812,7 +20623,7 @@ Transform:
   m_Children:
   - {fileID: 1704931559}
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &496703583
 GameObject:
@@ -30609,6 +30420,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: T-Pose (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7aabd92fc1edf4b4e88784d60a188365, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 7aabd92fc1edf4b4e88784d60a188365, type: 3}
       propertyPath: m_Controller
       value: 
@@ -30644,10 +30459,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522340770}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 14.47, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &522340772
 MeshRenderer:
@@ -35694,7 +35509,6 @@ GameObject:
   - component: {fileID: 644905433}
   - component: {fileID: 644905432}
   - component: {fileID: 644905431}
-  - component: {fileID: 644905430}
   m_Layer: 0
   m_Name: Pouler1 (11)
   m_TagString: Untagged
@@ -35702,28 +35516,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &644905430
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644905429}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &644905431
 Animator:
   serializedVersion: 5
@@ -35841,7 +35633,7 @@ Transform:
   m_Children:
   - {fileID: 980706814}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &648664210
 GameObject:
@@ -35857,7 +35649,6 @@ GameObject:
   - component: {fileID: 648664214}
   - component: {fileID: 648664213}
   - component: {fileID: 648664212}
-  - component: {fileID: 648664211}
   m_Layer: 0
   m_Name: Pouler1 (8)
   m_TagString: Untagged
@@ -35865,28 +35656,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &648664211
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648664210}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &648664212
 Animator:
   serializedVersion: 5
@@ -36020,7 +35789,6 @@ GameObject:
   - component: {fileID: 745550422}
   - component: {fileID: 745550421}
   - component: {fileID: 745550420}
-  - component: {fileID: 745550419}
   m_Layer: 0
   m_Name: Pouler1 (17)
   m_TagString: Untagged
@@ -36028,28 +35796,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &745550419
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 745550418}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &745550420
 Animator:
   serializedVersion: 5
@@ -36167,7 +35913,7 @@ Transform:
   m_Children:
   - {fileID: 1089865468}
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &785263241
 GameObject:
@@ -45928,7 +45674,6 @@ GameObject:
   - component: {fileID: 888358917}
   - component: {fileID: 888358916}
   - component: {fileID: 888358915}
-  - component: {fileID: 888358914}
   m_Layer: 0
   m_Name: Pouler1 (13)
   m_TagString: Untagged
@@ -45936,28 +45681,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &888358914
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888358913}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &888358915
 Animator:
   serializedVersion: 5
@@ -46075,7 +45798,7 @@ Transform:
   m_Children:
   - {fileID: 1145192891}
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &926470252
 GameObject:
@@ -70712,7 +70435,6 @@ GameObject:
   - component: {fileID: 1198078613}
   - component: {fileID: 1198078612}
   - component: {fileID: 1198078611}
-  - component: {fileID: 1198078610}
   m_Layer: 0
   m_Name: Pouler1 (5)
   m_TagString: Untagged
@@ -70720,28 +70442,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &1198078610
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1198078609}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &1198078611
 Animator:
   serializedVersion: 5
@@ -70875,7 +70575,6 @@ GameObject:
   - component: {fileID: 1214638877}
   - component: {fileID: 1214638876}
   - component: {fileID: 1214638875}
-  - component: {fileID: 1214638874}
   m_Layer: 0
   m_Name: Pouler1 (20)
   m_TagString: Untagged
@@ -70883,28 +70582,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &1214638874
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1214638873}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &1214638875
 Animator:
   serializedVersion: 5
@@ -71022,7 +70699,7 @@ Transform:
   m_Children:
   - {fileID: 311548446}
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1247346285
 GameObject:
@@ -71069,7 +70746,6 @@ GameObject:
   - component: {fileID: 1258479384}
   - component: {fileID: 1258479383}
   - component: {fileID: 1258479382}
-  - component: {fileID: 1258479381}
   m_Layer: 0
   m_Name: Pouler1 (12)
   m_TagString: Untagged
@@ -71077,28 +70753,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &1258479381
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258479380}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &1258479382
 Animator:
   serializedVersion: 5
@@ -71216,7 +70870,7 @@ Transform:
   m_Children:
   - {fileID: 496703584}
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1278732397
 GameObject:
@@ -76200,7 +75854,6 @@ GameObject:
   - component: {fileID: 1413666313}
   - component: {fileID: 1413666312}
   - component: {fileID: 1413666311}
-  - component: {fileID: 1413666310}
   m_Layer: 0
   m_Name: Pouler1 (3)
   m_TagString: Untagged
@@ -76208,28 +75861,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &1413666310
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413666309}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &1413666311
 Animator:
   serializedVersion: 5
@@ -76441,7 +76072,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1525797496
 GameObject:
@@ -81327,7 +80958,6 @@ GameObject:
   - component: {fileID: 1544233700}
   - component: {fileID: 1544233699}
   - component: {fileID: 1544233698}
-  - component: {fileID: 1544233697}
   m_Layer: 0
   m_Name: Pouler1 (6)
   m_TagString: Untagged
@@ -81335,28 +80965,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &1544233697
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544233696}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &1544233698
 Animator:
   serializedVersion: 5
@@ -91235,7 +90843,6 @@ GameObject:
   - component: {fileID: 1733552092}
   - component: {fileID: 1733552091}
   - component: {fileID: 1733552090}
-  - component: {fileID: 1733552089}
   m_Layer: 0
   m_Name: Pouler1 (10)
   m_TagString: Untagged
@@ -91243,28 +90850,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &1733552089
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733552088}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &1733552090
 Animator:
   serializedVersion: 5
@@ -91382,7 +90967,7 @@ Transform:
   m_Children:
   - {fileID: 584008334}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1752567060
 GameObject:
@@ -91398,7 +90983,6 @@ GameObject:
   - component: {fileID: 1752567064}
   - component: {fileID: 1752567063}
   - component: {fileID: 1752567062}
-  - component: {fileID: 1752567061}
   m_Layer: 0
   m_Name: Pouler1 (16)
   m_TagString: Untagged
@@ -91406,28 +90990,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &1752567061
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752567060}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &1752567062
 Animator:
   serializedVersion: 5
@@ -91545,7 +91107,7 @@ Transform:
   m_Children:
   - {fileID: 431754183}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1777494497
 GameObject:
@@ -91561,7 +91123,6 @@ GameObject:
   - component: {fileID: 1777494501}
   - component: {fileID: 1777494500}
   - component: {fileID: 1777494499}
-  - component: {fileID: 1777494498}
   m_Layer: 0
   m_Name: Pouler1 (15)
   m_TagString: Untagged
@@ -91569,28 +91130,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &1777494498
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777494497}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &1777494499
 Animator:
   serializedVersion: 5
@@ -91708,7 +91247,7 @@ Transform:
   m_Children:
   - {fileID: 448187027}
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1823274770
 GameObject:
@@ -92049,7 +91588,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6294660108581492562, guid: d80292eb252f886448a2a17b30e77235, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 6294660108581492562, guid: d80292eb252f886448a2a17b30e77235, type: 3}
       propertyPath: m_LocalPosition.x
@@ -92114,7 +91653,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6294660108581492562, guid: d80292eb252f886448a2a17b30e77235, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6294660108581492562, guid: d80292eb252f886448a2a17b30e77235, type: 3}
       propertyPath: m_LocalPosition.x
@@ -92287,6 +91826,11 @@ MonoBehaviour:
   m_maxTimeOnPoint: 0
   m_dinoBack: {fileID: 0}
   m_isOnDino: 0
+--- !u!1 &1964535935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5759639365916718142, guid: 8d4a2b2dbe67ec049a20e3d83838423c, type: 3}
+  m_PrefabInstance: {fileID: 5759639365763162431}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2037978370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5759639365916718141, guid: 8d4a2b2dbe67ec049a20e3d83838423c, type: 3}
@@ -92306,7 +91850,6 @@ GameObject:
   - component: {fileID: 2039618446}
   - component: {fileID: 2039618445}
   - component: {fileID: 2039618444}
-  - component: {fileID: 2039618443}
   m_Layer: 0
   m_Name: Pouler1 (7)
   m_TagString: Untagged
@@ -92314,28 +91857,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &2039618443
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039618442}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &2039618444
 Animator:
   serializedVersion: 5
@@ -97339,7 +96860,6 @@ GameObject:
   - component: {fileID: 2104285186}
   - component: {fileID: 2104285185}
   - component: {fileID: 2104285184}
-  - component: {fileID: 2104285183}
   m_Layer: 0
   m_Name: Pouler1 (19)
   m_TagString: Untagged
@@ -97347,28 +96867,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &2104285183
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2104285182}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!95 &2104285184
 Animator:
   serializedVersion: 5
@@ -97486,7 +96984,7 @@ Transform:
   m_Children:
   - {fileID: 1639037821}
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &44194927675421775
 PrefabInstance:
@@ -97804,6 +97302,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5759639365054652224, guid: 8d4a2b2dbe67ec049a20e3d83838423c, type: 3}
+      propertyPath: m_dinoBack
+      value: 
+      objectReference: {fileID: 1964535935}
     - target: {fileID: 5759639365916718141, guid: 8d4a2b2dbe67ec049a20e3d83838423c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.246

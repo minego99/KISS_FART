@@ -168,7 +168,7 @@ public class Pouler : MonoBehaviour
     {
         transform.SetParent(m_dinoBack);
 
-        transform.position = DinoMovement.s_instance.m_dinoBack.position;
+        transform.position = DinoMovement.s_instance.m_dinoBack.transform.position;
     }
 
 

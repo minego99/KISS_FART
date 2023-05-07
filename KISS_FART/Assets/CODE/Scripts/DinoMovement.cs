@@ -23,7 +23,7 @@ public class DinoMovement : MonoBehaviour
     public bool m_mouthActivated;
 
     public bool m_hasEgg;
-    public Transform m_dinoBack;
+    public GameObject m_dinoBack;
 
     private void Awake()
     {

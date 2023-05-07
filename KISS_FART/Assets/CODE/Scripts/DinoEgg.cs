@@ -5,14 +5,11 @@ using UnityEngine;
 public class DinoEgg : MonoBehaviour
 {
     bool m_isEggOnBack = false;
-   
+   bool m_canBePickedUp = true;
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Nest") == true)
+        if(m_canBePickedUp == true)
         {
-            
-        }
-
         if (GameManager.s_doesattack == false)
         {
             if (other.CompareTag("Mouth") == true && m_isEggOnBack == false)
@@ -27,6 +24,8 @@ public class DinoEgg : MonoBehaviour
                 TakeEggOff();
             }
         }
+        }
+       
 
        
 
@@ -46,9 +45,9 @@ public class DinoEgg : MonoBehaviour
         
         if (m_isEggOnBack == true)
         {
-            Debug.Log("Go on back");
-            transform.SetParent(DinoMovement.s_instance.m_dinoBack);
-            transform.position = DinoMovement.s_instance.m_dinoBack.position;
+         //   Debug.Log("Go on back");
+            transform.SetParent(DinoMovement.s_instance.m_dinoBack.transform);
+            transform.position = DinoMovement.s_instance.m_dinoBack.transform.position;
           //  transform.position = DinoMovement.s_instance.m_dinoBack.position;
             DinoMovement.s_instance.m_hasEgg = true;
         }
@@ -59,6 +58,14 @@ public class DinoEgg : MonoBehaviour
             transform.SetParent(null);
             DinoMovement.s_instance.m_hasEgg = false;
         }
+        else if(Nest.s_instance.m_contactEgg == true)
+        {
+            m_isEggOnBack = false;
+            transform.SetParent(null);
+            DinoMovement.s_instance.m_hasEgg = false;
+            Nest.s_instance.m_contactEgg = false;
+            m_canBePickedUp = false;
+        }
         if (Input.GetButtonDown("Fire1"))
         {
             if(m_isEggOnBack == true)
@@ -68,7 +75,7 @@ public class DinoEgg : MonoBehaviour
             }
         }
 
-        Debug.Log(DinoMovement.s_instance.m_hasEgg);
+      //  Debug.Log(DinoMovement.s_instance.m_hasEgg);
     }
 
 
