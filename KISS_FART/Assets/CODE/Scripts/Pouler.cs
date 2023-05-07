@@ -8,7 +8,7 @@ public class Pouler : MonoBehaviour
     NavMeshAgent m_agent;
     Collider m_collider;
     Animator m_animator;
-
+  [SerializeField]  AudioClip audioClip;
     [SerializeField]
     private float m_minimumPatrolDistance, m_patrolMaxDistance, m_navMeshSnapMaxDistance, m_minTimeOnPoint, m_maxTimeOnPoint;
 
@@ -126,7 +126,8 @@ public class Pouler : MonoBehaviour
     }
 
     #endregion
-
+   
+   
     private void Awake()
     {
         m_agent = GetComponent<NavMeshAgent>();
@@ -160,6 +161,8 @@ public class Pouler : MonoBehaviour
     }
     public void Death()
     {
+
+        AudioSource.PlayClipAtPoint(audioClip, transform.position);
         Destroy(gameObject);
     }
     
@@ -182,6 +185,7 @@ public class Pouler : MonoBehaviour
 
     void Update()
     {
+       
 
         if (m_poulerIsOnBack)
         {
