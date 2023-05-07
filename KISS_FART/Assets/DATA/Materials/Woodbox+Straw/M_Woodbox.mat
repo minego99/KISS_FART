@@ -9,7 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: M_Woodbox
   m_Shader: {fileID: 4800000, guid: 0be88b26601b9dd4a845c49a31e108fe, type: 3}
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _INVERSESMOOTHNESS_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -86,7 +87,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _InverseSmoothness: 0
+    - _InverseSmoothness: 1
     - _InvertNormal: 0
     - _Metallic: 0
     - _Mode: 0

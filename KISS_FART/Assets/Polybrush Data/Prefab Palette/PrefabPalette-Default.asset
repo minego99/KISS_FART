@@ -32,13 +32,13 @@ MonoBehaviour:
   - gameObject: {fileID: 4341625995968758136, guid: fc0e4570bce59f941a460d863091bc17, type: 3}
     settings:
       m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_RotationRangeMin: {x: -90, y: 0, z: 0}
+      m_RotationRangeMax: {x: -90, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
-      m_XRotationBool: 0
+      m_XRotationBool: 1
       m_YRotationBool: 0
       m_ZRotationBool: 0
       m_XScaleBool: 0
@@ -48,13 +48,13 @@ MonoBehaviour:
   - gameObject: {fileID: 5797655392376137143, guid: 65d3636ce8a500849912cf466979e812, type: 3}
     settings:
       m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_RotationRangeMin: {x: -90, y: 0, z: 0}
+      m_RotationRangeMax: {x: -90, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
-      m_XRotationBool: 0
+      m_XRotationBool: 1
       m_YRotationBool: 0
       m_ZRotationBool: 0
       m_XScaleBool: 0
@@ -64,13 +64,13 @@ MonoBehaviour:
   - gameObject: {fileID: 8415493411198327836, guid: 9ae2b532f21f2dd4199b29eb6a72f4ea, type: 3}
     settings:
       m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_RotationRangeMin: {x: -90, y: 0, z: 0}
+      m_RotationRangeMax: {x: -90, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
-      m_XRotationBool: 0
+      m_XRotationBool: 1
       m_YRotationBool: 0
       m_ZRotationBool: 0
       m_XScaleBool: 0
@@ -80,13 +80,13 @@ MonoBehaviour:
   - gameObject: {fileID: 2149164448771853401, guid: 379dbb7c404d52a40b6dd4d9f5358cde, type: 3}
     settings:
       m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_RotationRangeMin: {x: -90, y: 0, z: 0}
+      m_RotationRangeMax: {x: -90, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
-      m_XRotationBool: 0
+      m_XRotationBool: 1
       m_YRotationBool: 0
       m_ZRotationBool: 0
       m_XScaleBool: 0
