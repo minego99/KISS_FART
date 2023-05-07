@@ -27,29 +27,31 @@ public class HUDManager : MonoBehaviour
     void Update()
     {
 
+        //Debug.Log(GameManager.s_poulerScore);
+
         if (GameManager.s_poulerScore == 0)
         {
-            m_hudEggText.sprite = m_0EggScore;
+            m_hudScoreEggText.sprite = m_0EggScore;
         }
         if (GameManager.s_poulerScore == 1)
         {
-            m_hudEggText.sprite = m_1EggScore;
+            m_hudScoreEggText.sprite = m_1EggScore;
         }
         if(GameManager.s_poulerScore == 2)
         {
-            m_hudEggText.sprite = m_2EggScore;
+            m_hudScoreEggText.sprite = m_2EggScore;
         }
         if(GameManager.s_poulerScore == 3)
         {
-            m_hudEggText.sprite = m_3EggScore;
+            m_hudScoreEggText.sprite = m_3EggScore;
         }
         if(GameManager.s_poulerScore == 4)
         {
-            m_hudEggText.sprite = m_4EggScore;
+            m_hudScoreEggText.sprite = m_4EggScore;
         }
         if(GameManager.s_poulerScore == 5)
         {
-            m_hudEggText.sprite = m_5EggScore;
+            m_hudScoreEggText.sprite = m_5EggScore;
         }
 
         if(GameManager.s_instance.m_currentEggsNumber == 1)
