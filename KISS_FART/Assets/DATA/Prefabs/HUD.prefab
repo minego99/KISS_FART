@@ -34,6 +34,7 @@ RectTransform:
   m_Children:
   - {fileID: 3317072391278292222}
   - {fileID: 3317072390974287693}
+  - {fileID: 844705041488899560}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -115,12 +116,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7333daf8ae83da48a8861ae8170992a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_friendlyChickenText: {fileID: 21300000, guid: a1150c23e154a9646a34fef1c77f3a88, type: 3}
-  m_unfriendlyChickenText: {fileID: 21300000, guid: c98aa735302c92747a10425b722e56e3, type: 3}
+  m_friendlyChickenText: {fileID: 21300000, guid: dbafde4ac62256a4480f4d844a081833, type: 3}
+  m_unfriendlyChickenText: {fileID: 21300000, guid: 23945707ceaf6ce47b9cabee92a3ea4d, type: 3}
   m_takeEggText: {fileID: 21300000, guid: 3a9adcd00888bd643ba4e726d8e3d8ee, type: 3}
   m_takenEggText: {fileID: 21300000, guid: 69a45f5c1c8b312439296272c3a3358a, type: 3}
+  m_0EggScore: {fileID: 21300000, guid: b0ae725e378a86f44b39ed9b95ea613f, type: 3}
+  m_1EggScore: {fileID: 21300000, guid: eed1a4eb41702734ba1f747d3a029f70, type: 3}
+  m_2EggScore: {fileID: 21300000, guid: 8a4ff15ab80aea7489490b25f2091631, type: 3}
+  m_3EggScore: {fileID: 21300000, guid: c232dd7d24f209746a8bbd889b7da554, type: 3}
+  m_4EggScore: {fileID: 21300000, guid: b3ec5aa2948ae0e479e3ee402de225d5, type: 3}
+  m_5EggScore: {fileID: 21300000, guid: 9276aef28cc4fda48a370208644d3eea, type: 3}
   m_hudTimeText: {fileID: 3317072391278292192}
   m_hudEggText: {fileID: 3317072390974287695}
+  m_hudScoreEggText: {fileID: 3206650630519715223}
 --- !u!1 &3317072390974287728
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,6 +258,82 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3317072391278292193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &4432200513830241154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 844705041488899560}
+  - component: {fileID: 3384189527252988926}
+  - component: {fileID: 3206650630519715223}
+  m_Layer: 5
+  m_Name: EggAction (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &844705041488899560
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4432200513830241154}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3317072390161433503}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -275, y: 75}
+  m_SizeDelta: {x: 250.2, y: 250.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3384189527252988926
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4432200513830241154}
+  m_CullTransparentMesh: 1
+--- !u!114 &3206650630519715223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4432200513830241154}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
