@@ -31,23 +31,23 @@ public class HUDManager : MonoBehaviour
         {
             m_hudEggText.sprite = m_0EggScore;
         }
-        else if (GameManager.s_poulerScore == 1)
+        if (GameManager.s_poulerScore == 1)
         {
             m_hudEggText.sprite = m_1EggScore;
         }
-        else if(GameManager.s_poulerScore == 2)
+        if(GameManager.s_poulerScore == 2)
         {
             m_hudEggText.sprite = m_2EggScore;
         }
-        else if(GameManager.s_poulerScore == 3)
+        if(GameManager.s_poulerScore == 3)
         {
             m_hudEggText.sprite = m_3EggScore;
         }
-        else if(GameManager.s_poulerScore == 4)
+        if(GameManager.s_poulerScore == 4)
         {
             m_hudEggText.sprite = m_4EggScore;
         }
-        else if(GameManager.s_poulerScore == 5)
+        if(GameManager.s_poulerScore == 5)
         {
             m_hudEggText.sprite = m_5EggScore;
         }
