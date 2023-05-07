@@ -24,7 +24,7 @@ public class DinoMovement : MonoBehaviour
 
     public bool m_hasEgg;
     public GameObject m_dinoBack;
-
+    public ParticleSystem m_walkParticle;
     private void Awake()
     {
         s_backPosition = GetComponent<Transform>();
@@ -39,6 +39,10 @@ public class DinoMovement : MonoBehaviour
             m_animator = GetComponent<Animator>();
             PlayerInput inputs = new PlayerInput();
         }
+    public void PayParticle()
+    {
+        m_walkParticle.Play();
+    } 
         void LayEgg()
         {
             if (GameManager.s_poulerScore >= m_poulerneededToLayAnEgg)
@@ -51,7 +55,7 @@ public class DinoMovement : MonoBehaviour
                 }
             }
         }
-
+        
         void InstantiateEgg()
         {
             Instantiate(m_eggPrefab, m_layEggPosition.transform.position, Quaternion.identity);
