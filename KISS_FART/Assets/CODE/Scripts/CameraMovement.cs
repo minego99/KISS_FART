@@ -7,7 +7,7 @@ public class CameraMovement : MonoBehaviour
     private Camera m_camera;
 
     [SerializeField]
-    private Transform m_focusPoint, m_cameraAnchor;
+    private Transform m_focusPoint;
     [SerializeField]
     private float m_MovementSmoothing;
 

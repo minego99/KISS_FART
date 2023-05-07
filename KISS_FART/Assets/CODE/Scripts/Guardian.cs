@@ -59,7 +59,7 @@ public class Guardian : MonoBehaviour
             }
             else
             {
-                Debug.Log("test");
+              //  Debug.Log("test");
                 m_nextPoint = m_currentPoint.m_NextPatrolPoint;
             }
             m_travelAlpha = 0;
