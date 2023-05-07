@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
    public  GameObject m_nestGameObject;
     public static int s_poulerScore = 0;
     public int m_poulerScoreToEgg = 5;
+    public bool m_hasLayedAnEgg = false;
     
     private void Awake()
     {

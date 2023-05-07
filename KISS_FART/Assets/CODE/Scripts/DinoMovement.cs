@@ -45,6 +45,10 @@ public class DinoMovement : MonoBehaviour
             {
                 GameManager.s_poulerScore = 0;
                 m_animator.SetTrigger("LayEgg");
+                if (!GameManager.s_instance.m_hasLayedAnEgg)
+                {
+                GameManager.s_instance.m_hasLayedAnEgg = true;
+                }
             }
         }
 
